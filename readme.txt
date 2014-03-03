@@ -1,5 +1,5 @@
 === Manage Issue Based Magazine ===
-Contributors: purpladmad
+Contributors: PurpleMAD
 Tags: Magazine Issue Manage, Magazine, Issue Manager, Issue, Issues, Magazine Issue, Manage Issue Based Magazine
 Requires at least: 3.8.1
 Tested up to: 3.8.1
