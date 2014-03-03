@@ -17,7 +17,7 @@ Transform your website from a "boring blog" into a "mesmerizing magazine".
 
 And do it easily with the Issue Based Magazine plugin brought to you by PurpleMAD,
 
-Managing online magazines has never been simpler. You don't need to know a word of code…yet you can create a stylish and stunning magazine that makes the right impact on your target audience.
+Managing online magazines has never been simpler. You don't need to know a word of code, yet you can create a stylish and stunning magazine that makes the right impact on your target audience.
 
 If you are a content creator or content curator or both and more, Issue Based Magazine is right for you. This powerful plugin 
 
@@ -82,13 +82,13 @@ Plugin Develop by PurpleMAD [Visit website](http://www.purplemad.ca)
 == Screenshots ==
 
 1. Manage Listing Of Magazine.
-2. Add new Magazine.
+2. Add New Magazine.
 3. Add & Manage Issues.
 4. Add & Manage Magazine Category.
 5. Manage Magazine Issue General Settings.
 6. Demo Of Issue Listing In Website View.
 7. Demo Of Home Page View. [Visit Home Page](http://mim.purplemadprojects.com/)
-8. Shortcode Samples. [Download User Guide](http://mim.purplemadprojects.com/sample-shortcode/)
+8. Shortcode Samples. [Check More Samples](http://mim.purplemadprojects.com/sample-shortcode/)
 
 
 == Changelog ==
