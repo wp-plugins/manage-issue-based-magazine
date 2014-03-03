@@ -1,0 +1,7 @@
+.form-field .mim-ulcategory .selectit input{width:3% !important;}
+.form-field .mim_image_issue{width:8% !important;}
+.form-field .mim_remove_issue{width:13% !important;}
+#sortable li .selectit{ cursor: move ;}	
+.form-field .issuepdfform{width:100px !important;margin-top: 15px;}	
+.form-field .issueremovepdfform{width:100px !important;margin-top: 15px;}
+.cover_img_edit{border:1px solid #CCC;height:150px;width:150px;margin-bottom: 15px;}
