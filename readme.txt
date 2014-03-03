@@ -7,7 +7,7 @@ Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Transform your website from a ‘boring blog’ into a ‘mesmerizing magazine’.
+Transform your website from a boring blog into a mesmerizing magazine.
 
 == Description ==
 
@@ -17,20 +17,20 @@ Transform your website from a "boring blog" into a "mesmerizing magazine".
 
 And do it easily with the Issue Based Magazine plugin brought to you by PurpleMAD,
 
-Managing online magazines has never been simpler. You don’t need to know a word of code…yet you can create a stylish and stunning magazine that makes the right impact on your target audience.
+Managing online magazines has never been simpler. You don't need to know a word of code…yet you can create a stylish and stunning magazine that makes the right impact on your target audience.
 
 If you are a content creator or content curator or both and more, Issue Based Magazine is right for you. This powerful plugin 
 
 * Lets you publish content in issues: the perfect and simple way to segment your content and deliver to readers, across different issues. Exactly how a magazine should be.
 
-* Offers you the option of using WordPress’ ‘categorized article’ features: create appropriate categories to offer a more enhanced user experience to your readers.
+* Offers you the option of using WordPress "categorized article" features: create appropriate categories to offer a more enhanced user experience to your readers.
 
 * Enables you to upload pdf version of magazine for your issues: an infinitely easier way to manage your already published issues.
 
 * Offers choice to your readers to browse content by selecting current and past issues on the website: more choice you offer your readers, the more they like you.
 
 = About Issue Based Magazine Plugin =
-This plugin is implemented using WordPress’ custom post type, taxonomies and post features.  Issue Based Magazine is perfect for you if you are creating an online magazine. Issue based Magazine plugin is best for general topic magazine, business magazine, fashion magazine, a technology magazine, a student magazine or any magazine that is published periodically.  
+This plugin is implemented using WordPress custom post type, taxonomies and post features.  Issue Based Magazine is perfect for you if you are creating an online magazine. Issue based Magazine plugin is best for general topic magazine, business magazine, fashion magazine, a technology magazine, a student magazine or any magazine that is published periodically.  
 
 * To be organized in issues 
 
@@ -38,7 +38,7 @@ This plugin is implemented using WordPress’ custom post type, taxonomies and pos
 
 = Why You Should Download this Plugin NOW = 
 = 1. Stress Free Publishing on Time =
-Issue Based Magazine lets you pre-set the publishing date. All you now have to do is create and upload content, and rest assured your magazine will be published on time. When you say ‘magazine’, timely publishing is one of the most important parameters for creating a positive perception. Issue Based Magazine won’t let that perception suffer.
+Issue Based Magazine lets you pre-set the publishing date. All you now have to do is create and upload content, and rest assured your magazine will be published on time. When you say "magazine", timely publishing is one of the most important parameters for creating a positive perception. Issue Based Magazine won't let that perception suffer.
 
 = 2. Freedom to Display Relevant Categories =
 Stuck with displaying uniform featured categories across issues? Break FREE with Issue Based Magazine. Each issue of your magazine is different and you might want to highlight different categories for different issues. This plugin lets you specify separate categories to be displayed for each issue.
@@ -47,7 +47,7 @@ Stuck with displaying uniform featured categories across issues? Break FREE with
 Upload your magazine as an exclusive pdf magazine, making it easier to publish past issues on the website. And readers can easily download issues and read when they want to.
 
 = 4. Efficient Search Behavior =
-If people are coming back to search for something in your magazine that’s a good sign. Make life easy for your readers by making the search more effective. Issue Based Magazine gives you the option to let your readers search for content site-wide or in specific issue. 
+If people are coming back to search for something in your magazine that's a good sign. Make life easy for your readers by making the search more effective. Issue Based Magazine gives you the option to let your readers search for content site-wide or in specific issue. 
 
 Click here for [Plugin Demo](http://mim.purplemadprojects.com/) 
 
