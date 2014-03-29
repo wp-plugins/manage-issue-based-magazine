@@ -1,0 +1,103 @@
+=== Manage Issue Based Magazine ===
+Contributors: PurpleMAD
+Tags: Magazine Issue Manage, Magazine, Issue Manager, Issue, Issues, Magazine Issue, Manage Issue Based Magazine
+Requires at least: 3.8.1
+Tested up to: 3.8.1
+Stable tag: 1.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Transform your website from a boring blog into a mesmerizing magazine.
+
+== Description ==
+
+It is all about presentation. When you create awesome content, get more out of it by presenting it in a more professional format. 
+
+Transform your website from a "boring blog" into a "mesmerizing magazine". 
+
+And do it easily with the Issue Based Magazine plugin brought to you by PurpleMAD,
+
+Managing online magazines has never been simpler. You don't need to know a word of code, yet you can create a stylish and stunning magazine that makes the right impact on your target audience.
+
+If you are a content creator or content curator or both and more, Issue Based Magazine is right for you. This powerful plugin 
+
+* Lets you publish content in issues: the perfect and simple way to segment your content and deliver to readers, across different issues. Exactly how a magazine should be.
+
+* Offers you the option of using WordPress "categorized article" features: create appropriate categories to offer a more enhanced user experience to your readers.
+
+* Enables you to upload pdf version of magazine for your issues: an infinitely easier way to manage your already published issues.
+
+* Offers choice to your readers to browse content by selecting current and past issues on the website: more choice you offer your readers, the more they like you.
+
+= About Issue Based Magazine Plugin =
+This plugin is implemented using WordPress custom post type, taxonomies and post features.  Issue Based Magazine is perfect for you if you are creating an online magazine. Issue based Magazine plugin is best for general topic magazine, business magazine, fashion magazine, a technology magazine, a student magazine or any magazine that is published periodically.  
+
+* To be organized in issues 
+
+* To be published at periodic intervals
+
+= Why You Should Download this Plugin NOW = 
+= 1. Stress Free Publishing on Time =
+Issue Based Magazine lets you pre-set the publishing date. All you now have to do is create and upload content, and rest assured your magazine will be published on time. When you say "magazine", timely publishing is one of the most important parameters for creating a positive perception. Issue Based Magazine won't let that perception suffer.
+
+= 2. Freedom to Display Relevant Categories =
+Stuck with displaying uniform featured categories across issues? Break FREE with Issue Based Magazine. Each issue of your magazine is different and you might want to highlight different categories for different issues. This plugin lets you specify separate categories to be displayed for each issue.
+
+= 3. Uploading PDF Format Option = 
+Upload your magazine as an exclusive pdf magazine, making it easier to publish past issues on the website. And readers can easily download issues and read when they want to.
+
+= 4. Efficient Search Behavior =
+If people are coming back to search for something in your magazine that's a good sign. Make life easy for your readers by making the search more effective. Issue Based Magazine gives you the option to let your readers search for content site-wide or in specific issue. 
+
+Click here for [Plugin Demo](http://mim.purplemadprojects.com/) 
+
+For Manage Issue Based Magazine Plugin [Download User Guide](http://mim.purplemadprojects.com/User-Guide-for-Manage-Issue-Based-Magazine-Plugin.pdf) 
+
+Plugin Develop by PurpleMAD [Visit website](http://www.purplemad.ca)
+
+== Installation ==
+
+Follow these steps to install the plugin in your WordPress website and turn your website into an issue based magazine website:
+
+1. Upload the Manager Issue Based Magazine folder to the /wp-content/plugins/ directory. or Unzip and upload it to your WordPress website's wp-content/plugins folder via FTP.
+2. Go to admin panel and activate plugin from "Plugins" page. 
+3. Once you 'activate plugin', you can see "Magazine" tab in left menu as indicated in picture below. You can manage magazine issues, issue categories, issue articles and plugin settings from this tab.
+
+Click here for [Plugin Demo](http://mim.purplemadprojects.com/) 
+
+For Manage Issue Based Magazine Plugin [Download User Guide](http://mim.purplemadprojects.com/User-Guide-for-Manage-Issue-Based-Magazine-Plugin.pdf) 
+
+Plugin Develop by PurpleMAD [Visit website](http://www.purplemad.ca)
+
+== Frequently Asked Questions ==
+
+= No Questions
+
+Click here for [Plugin Demo](http://mim.purplemadprojects.com/) 
+
+For Manage Issue Based Magazine Plugin [Download User Guide](http://mim.purplemadprojects.com/User-Guide-for-Manage-Issue-Based-Magazine-Plugin.pdf) 
+
+Plugin Develop by PurpleMAD [Visit website](http://www.purplemad.ca)
+
+== Screenshots ==
+
+1. Manage Listing Of Magazine.
+2. Add New Magazine.
+3. Add & Manage Issues.
+4. Add & Manage Magazine Category.
+5. Manage Magazine Issue General Settings.
+6. Demo Of Issue Listing In Website View.
+7. Demo Of Home Page View. [Visit Home Page](http://mim.purplemadprojects.com/)
+8. Shortcode Samples. [Check More Samples](http://mim.purplemadprojects.com/sample-shortcode/)
+
+
+== Changelog ==
+= 1.0 =
+* First version.
+
+== Upgrade Notice ==
+Click here for [Plugin Demo](http://mim.purplemadprojects.com/) 
+
+For Manage Issue Based Magazine Plugin [Download User Guide](http://mim.purplemadprojects.com/User-Guide-for-Manage-Issue-Based-Magazine-Plugin.pdf) 
+
+Plugin Develop by PurpleMAD [Visit website](http://www.purplemad.ca)
