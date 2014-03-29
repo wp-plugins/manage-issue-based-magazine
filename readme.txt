@@ -55,7 +55,7 @@ Click here for [Plugin Demo](http://mim.purplemadprojects.com/)
 
 For Manage Issue Based Magazine Plugin [Download User Guide](http://mim.purplemadprojects.com/User-Guide-for-Manage-Issue-Based-Magazine-Plugin.pdf) 
 
-Plugin Develop by PurpleMAD [Visit website](http://www.purplemad.ca)
+Plugin Developed by PurpleMAD by PurpleMAD [Visit website](http://www.purplemad.ca)
 
 == Installation ==
 
@@ -69,7 +69,7 @@ Click here for [Plugin Demo](http://mim.purplemadprojects.com/)
 
 For Manage Issue Based Magazine Plugin [Download User Guide](http://mim.purplemadprojects.com/User-Guide-for-Manage-Issue-Based-Magazine-Plugin.pdf) 
 
-Plugin Develop by PurpleMAD [Visit website](http://www.purplemad.ca)
+Plugin Developed by PurpleMAD [Visit website](http://www.purplemad.ca)
 
 == Frequently Asked Questions ==
 
@@ -79,7 +79,7 @@ Click here for [Plugin Demo](http://mim.purplemadprojects.com/)
 
 For Manage Issue Based Magazine Plugin [Download User Guide](http://mim.purplemadprojects.com/User-Guide-for-Manage-Issue-Based-Magazine-Plugin.pdf) 
 
-Plugin Develop by PurpleMAD [Visit website](http://www.purplemad.ca)
+Plugin Developed by PurpleMAD [Visit website](http://www.purplemad.ca)
 
 == Screenshots ==
 
@@ -102,4 +102,4 @@ Click here for [Plugin Demo](http://mim.purplemadprojects.com/)
 
 For Manage Issue Based Magazine Plugin [Download User Guide](http://mim.purplemadprojects.com/User-Guide-for-Manage-Issue-Based-Magazine-Plugin.pdf) 
 
-Plugin Develop by PurpleMAD [Visit website](http://www.purplemad.ca)
+Plugin Developed by PurpleMAD [Visit website](http://www.purplemad.ca)
