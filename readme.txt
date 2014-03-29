@@ -29,7 +29,7 @@ If you are a content creator or content curator or both and more, Issue Based Ma
 
 * Offers choice to your readers to browse content by selecting current and past issues on the website: more choice you offer your readers, the more they like you.
 
-* New = Multi-language support. (  English(default), German, Italian, Chinese, Turkish, Spanish) =
+* **New  Multi-language support.** (English(default), German, Italian, Chinese, Turkish, Spanish)
 
 = About Issue Based Magazine Plugin =
 This plugin is implemented using WordPress custom post type, taxonomies and post features.  Issue Based Magazine is perfect for you if you are creating an online magazine. Issue based Magazine plugin is best for general topic magazine, business magazine, fashion magazine, a technology magazine, a student magazine or any magazine that is published periodically.  
