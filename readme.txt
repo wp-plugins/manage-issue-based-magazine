@@ -1,13 +1,13 @@
-=== Manage Issue Based Magazine ===
+=== Manage Issue Based Magazine (Multi-language)===
 Contributors: PurpleMAD
 Tags: Magazine Issue Manage, Magazine, Issue Manager, Issue, Issues, Magazine Issue, Manage Issue Based Magazine
 Requires at least: 3.8.1
 Tested up to: 3.8.1
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Transform your website from a boring blog into a mesmerizing magazine.
+Transform your website from a boring blog into a mesmerizing magazine in your language.
 
 == Description ==
 
@@ -15,7 +15,7 @@ It is all about presentation. When you create awesome content, get more out of i
 
 Transform your website from a "boring blog" into a "mesmerizing magazine". 
 
-And do it easily with the Issue Based Magazine plugin brought to you by PurpleMAD,
+And do it easily with the Issue Based Magazine plugin brought to you by PurpleMAD.
 
 Managing online magazines has never been simpler. You don't need to know a word of code, yet you can create a stylish and stunning magazine that makes the right impact on your target audience.
 
@@ -28,6 +28,8 @@ If you are a content creator or content curator or both and more, Issue Based Ma
 * Enables you to upload pdf version of magazine for your issues: an infinitely easier way to manage your already published issues.
 
 * Offers choice to your readers to browse content by selecting current and past issues on the website: more choice you offer your readers, the more they like you.
+
+* Multi-language support.
 
 = About Issue Based Magazine Plugin =
 This plugin is implemented using WordPress custom post type, taxonomies and post features.  Issue Based Magazine is perfect for you if you are creating an online magazine. Issue based Magazine plugin is best for general topic magazine, business magazine, fashion magazine, a technology magazine, a student magazine or any magazine that is published periodically.  

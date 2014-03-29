@@ -65,16 +65,16 @@ if ( ! class_exists( 'MIM_Issue' ) ) {
               <div style="width:70%;" class="postbox-container">
                 <div class="metabox-holder">
                   <div class="meta-box-sortables ui-sortable">
-                    <h2 style="margin-bottom: 10px;">MIM Plugin Help</h2>
+                    <h2 style="margin-bottom: 10px;"><?php echo _e('MIM Plugin Help', 'mim-issue');?></h2>
                     <div id="modules" class="postbox">
                       <div class="handlediv" title="Click to toggle"><br>
                       </div>
-                      <h3 class="hndle"><span>User Guide (PDF)</span></h3>
-                      <div class="inside"> <a class="button-primary" href="http://mim.purplemadprojects.com/User-Guide-for-Manage-Issue-Based-Magazine-Plugin.pdf" target="_blank">Download User Guide</a><br>
-                        <small>for Manage Issue Based Magazine Plugin</small>
-                        <p><br>OR<br></p>
-                        <p>For more information visit website : <a href="http://www.purplemad.ca" target="_blank">www.purplemad.ca</a></p>
-                        </p>
+                      <h3 class="hndle"><span><?php echo _e('User Guide (PDF)', 'mim-issue');?></span></h3>
+                      <div class="inside"> <a class="button-primary" href="http://mim.purplemadprojects.com/User-Guide-for-Manage-Issue-Based-Magazine-Plugin.pdf" target="_blank"><?php echo _e('Download User Guide', 'mim-issue');?></a><br>
+                        <small><?php echo _e('for Manage Issue Based Magazine Plugin', 'mim-issue');?></small>
+                        <p><br><?php echo _e('OR', 'mim-issue');?><br></p>
+                        <p><?php echo _e('For more information visit website : ', 'mim-issue');?><a href="http://www.purplemad.ca" target="_blank">www.purplemad.ca</a></p>
+                        
                       </div>
                     </div>
                   </div>
@@ -217,7 +217,7 @@ if ( ! class_exists( 'MIM_Issue' ) ) {
 												<select name="mim_default_post_article_status">
 													<?php
 														$mim_curr_default_val=get_option('mim_default_post_article_status');
-														$mim_staus=array('approved'=>'Approved','draft'=>'Pending');
+														$mim_staus=array('approved'=>__('Approved'),'draft'=>__('Pending'));
 														foreach($mim_staus as $mim_k=>$mim_v){?>
 																<option value="<?php _e($mim_k,'mim-issue');?>" <?php selected( $mim_curr_default_val,$mim_k ,$echo = true);?>><?php _e($mim_v,'mim-issue');?></option>										
 														<?php }
@@ -252,7 +252,7 @@ if ( ! class_exists( 'MIM_Issue' ) ) {
 												<select name="mim_new_editor_status">
 													<?php
 														$mim_curr_sel_new_editor_val=get_option('mim_new_editor_status');		
-														$mim_new_editor_status=array('approved'=>'Approved','nonapproved'=>'Non-Approved');			
+														$mim_new_editor_status=array('approved'=>__('Approved', 'mim-issue'),'nonapproved'=>__('Non-Approved', 'mim-issue'));			
 														foreach($mim_new_editor_status as $mim_k=>$mim_v){?>
 																<option value="<?php _e($mim_k,'mim-issue');?>" <?php selected( $mim_curr_sel_new_editor_val,$mim_k ,$echo = true);?>><?php _e($mim_v,'mim-issue');?></option>										
 														<?php }
@@ -352,8 +352,7 @@ function modified_pre_get_posts( $query ) { <br/>
 													$mim_current_issue=get_option('mim_current_issue');
 													$mim_current_issue_selected = !empty($mim_current_issue)? $mim_current_issue : '-1';
 													$mim_current_selected='selected='.$mim_current_issue_selected;
-													wp_dropdown_categories('show_option_none=Select Current Issue&orderby=name&echo=1&taxonomy=issues&hide_empty=0&'.$mim_current_selected);
-												?>													
+													wp_dropdown_categories('show_option_none='.__("Select Current Issue", 'mim-issue').'&orderby=name&echo=1&taxonomy=issues&hide_empty=0&'.$mim_current_selected);?>													
 												</td>
 				                            </tr>
 											
