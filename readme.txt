@@ -58,8 +58,8 @@ Upload your magazine as an exclusive pdf magazine, making it easier to publish p
 If people are coming back to search for something in your magazine that's a good sign. Make life easy for your readers by making the search more effective. Issue Based Magazine gives you the option to let your readers search for content site-wide or in specific issue. 
 
 = *Coming Soon - Features in next upgrade* =
-* - Export magazine issues as PDF. *
-* - Publish subscription based magazines. *
+*  Export magazine issues as PDF. 
+*  Publish subscription based magazines. 
 
 Please send your suggestions and required features request at info@purplemad.ca, we will try to add them in our future upgrades.
 
