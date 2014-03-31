@@ -57,6 +57,12 @@ Upload your magazine as an exclusive pdf magazine, making it easier to publish p
 = 4. Efficient Search Behavior =
 If people are coming back to search for something in your magazine that's a good sign. Make life easy for your readers by making the search more effective. Issue Based Magazine gives you the option to let your readers search for content site-wide or in specific issue. 
 
+= *Coming Soon - Features in next upgrade* =
+* - Export magazine issues as PDF. *
+* - Publish subscription based magazines. *
+
+Please send your suggestions and required features request at info@purplemad.ca, we will try to add them in our future upgrades.
+
 Click here for [Plugin Demo](http://mim.purplemadprojects.com/) 
 
 For Manage Issue Based Magazine Plugin [Download User Guide](http://mim.purplemadprojects.com/User-Guide-for-Manage-Issue-Based-Magazine-Plugin.pdf) 
@@ -70,12 +76,6 @@ Follow these steps to install the plugin in your WordPress website and turn your
 1. Upload the Manager Issue Based Magazine folder to the /wp-content/plugins/ directory. or Unzip and upload it to your WordPress website's wp-content/plugins folder via FTP.
 2. Go to admin panel and activate plugin from "Plugins" page. 
 3. Once you 'activate plugin', you can see "Magazine" tab in left menu as indicated in picture below. You can manage magazine issues, issue categories, issue articles and plugin settings from this tab.
-
-= *Coming Soon - Features in next upgrade* =
-* - Export magazine issues as PDF. *
-* - Publish subscription based magazines. *
-
-Please send your suggestions and required features request at info@purplemad.ca, we will try to add them in our future upgrades.
 
 
 Click here for [Plugin Demo](http://mim.purplemadprojects.com/) 
