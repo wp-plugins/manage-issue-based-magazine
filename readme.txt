@@ -17,9 +17,6 @@ Transform your website from a boring blog into a mesmerizing magazine in your la
 > And If you are looking for custom theme to publish issue based magazine, feel free to contact us for theme development at info@purplemad.ca.
 
  
-
-
-
 It is all about presentation. When you create awesome content, get more out of it by presenting it in a more professional format. 
 
 Transform your website from a "boring blog" into a "mesmerizing magazine". 
