@@ -11,6 +11,15 @@ Transform your website from a boring blog into a mesmerizing magazine in your la
 
 == Description ==
 
+
+> **Coming up: Issue Based Magazine Theme**
+>
+> Coming up: Issue Based Magazine Theme.
+
+ 
+
+And If you are looking for custom theme to publish issue based magazine, feel free to contact us for theme development at info@purplemad.ca.
+
 It is all about presentation. When you create awesome content, get more out of it by presenting it in a more professional format. 
 
 Transform your website from a "boring blog" into a "mesmerizing magazine". 
@@ -64,6 +73,14 @@ Follow these steps to install the plugin in your WordPress website and turn your
 1. Upload the Manager Issue Based Magazine folder to the /wp-content/plugins/ directory. or Unzip and upload it to your WordPress website's wp-content/plugins folder via FTP.
 2. Go to admin panel and activate plugin from "Plugins" page. 
 3. Once you 'activate plugin', you can see "Magazine" tab in left menu as indicated in picture below. You can manage magazine issues, issue categories, issue articles and plugin settings from this tab.
+
+= *Coming Soon - Features in next upgrade* =
+
+* - Export magazine issues as PDF. *
+* - Publish subscription based magazines. *
+
+Please send your suggestions and required features request at info@purplemad.ca, we will try to add them in our future upgrades.
+
 
 Click here for [Plugin Demo](http://mim.purplemadprojects.com/) 
 
