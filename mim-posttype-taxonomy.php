@@ -8,10 +8,8 @@
 		*
 		**/
 		
-		wp_enqueue_script( 'media-upload' );
 		wp_enqueue_script( 'thickbox' );
 		wp_enqueue_media();	
-		wp_enqueue_script( 'upload-image', MIM_PLUGIN_URL . 'js/media-upload.js' );
 		wp_enqueue_script( 'jquery-ui-datepicker' );	 
 		wp_enqueue_style( 'date-css', MIM_PLUGIN_URL . 'css/jquery-ui.css' );
 		wp_enqueue_script( 'issue-js', MIM_PLUGIN_URL . 'js/issue.js' );
@@ -30,6 +28,9 @@
 	
 	if ( !function_exists( 'mim_issues_taxonomy_add_form_fields' ) )  {
 	 function mim_issues_taxonomy_add_form_fields() {		
+	 
+	 wp_enqueue_script( 'media-upload' );
+	 wp_enqueue_script( 'upload-image', MIM_PLUGIN_URL . 'js/media-upload.js' );
 	 wp_enqueue_style( 'issue-form', MIM_PLUGIN_URL . 'css/issue.css' );
 	?>
 		<div class="form-field">
@@ -96,6 +97,9 @@
 	
    if ( !function_exists( 'mim_issues_taxonomy_edit_form_fields' ) )  {
 	 function mim_issues_taxonomy_edit_form_fields($tag) {
+	 	
+		wp_enqueue_script( 'media-upload' );
+	    wp_enqueue_script( 'upload-image', MIM_PLUGIN_URL . 'js/media-upload.js' );
 	 	wp_enqueue_style( 'issue-form-edit', MIM_PLUGIN_URL . 'css/issue-edit.css' );
 	 	$mim_term_id = $tag->term_id;
 		$mim_cateroty=get_metadata('taxonomy', $mim_term_id, 'mim_issue_menu_category', true) ;	

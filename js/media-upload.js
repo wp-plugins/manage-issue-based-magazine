@@ -26,14 +26,15 @@ jQuery(document).ready(function() {
 						 className: 'media-frame loc_file',
 						 frame: 'select', //Allow Select Only
 						 multiple: false, //Disallow Mulitple selections
-						 library: {
-						 type: 'image' //Only allow images type: 'image'
-				 },
 			});
 			
 			 loc_file.on('select', function(){
 			 // Grab our attachment selection and construct a JSON representation of the model.
 			 var loc_media_attachment = loc_file.state().get('selection').first().toJSON();
+			 if(loc_media_attachment.subtype == "pdf"){
+					alert("Please Insert only image");
+					return;
+			 }
 			 var thum_url=loc_media_attachment.sizes.thumbnail.url;
 			 var thumb_id=loc_media_attachment.id; 
 			// Send the attachment URL to our custom input field via jQuery.
