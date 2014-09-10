@@ -1,0 +1,545 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Magazine Issue Manager v1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Fri Mar 14 2014 15:14:34 GMT+0530 (India Standard Time)\n"
+"PO-Revision-Date: Wed Mar 26 2014 17:13:01 GMT+0530 (India Standard Time)\n"
+"Last-Translator: admin <application.qa2@gmail.com>\n"
+"Language-Team: \n"
+"Language: Chinese\n"
+"Plural-Forms: nplurals=1; plural=n!=1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Poedit-Language: Chinese\n"
+"X-Poedit-Country: PEOPLE'S REPUBLIC OF CHINA\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;__:1;"
+"_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;_x:1,2c;"
+"_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;esc_attr__:1;"
+"esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;esc_html_x:1,2c;"
+"comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes\n"
+"X-Loco-Target-Locale: zh_CN"
+
+#: ../mim-custom-class.php:35 ../mim-custom-class.php:36
+#, fuzzy
+msgid "Magazine"
+msgstr "杂志"
+
+#: ../mim-custom-class.php:37
+msgid "Add New"
+msgstr "添加新"
+
+#: ../mim-custom-class.php:38
+msgid "Add New Magazine"
+msgstr "添加新杂志"
+
+#: ../mim-custom-class.php:39
+msgid "Edit Magazine"
+msgstr "编辑杂志"
+
+#: ../mim-custom-class.php:40
+msgid "New Magazine"
+msgstr "新杂志"
+
+#: ../mim-custom-class.php:41
+msgid "All Magazines"
+msgstr "所有杂志"
+
+#: ../mim-custom-class.php:42
+msgid "View Magazine"
+msgstr "检视杂志"
+
+#: ../mim-custom-class.php:43
+msgid "Search Magazines"
+msgstr "搜索杂志"
+
+#: ../mim-custom-class.php:44
+msgid "No magazines  found"
+msgstr "没有找到杂志"
+
+#: ../mim-custom-class.php:45
+msgid "No magazines  found in Trash"
+msgstr "没有在垃圾桶发现杂志"
+
+#: ../mim-custom-class.php:47
+msgid "Magazines"
+msgstr "杂志"
+
+#: ../mim-custom-class.php:73 ../mim-custom-class.php:88
+msgid "Issues"
+msgstr "问题"
+
+#: ../mim-custom-class.php:74
+msgid "Issue"
+msgstr "问题"
+
+#: ../mim-custom-class.php:75
+msgid "Search Issues"
+msgstr "搜索问题"
+
+#: ../mim-custom-class.php:76
+msgid "Popular Issues"
+msgstr "热门话题"
+
+#: ../mim-custom-class.php:77
+msgid "All Issues"
+msgstr "所有问题"
+
+#: ../mim-custom-class.php:80
+msgid "Edit Issue"
+msgstr "编辑发行"
+
+#: ../mim-custom-class.php:81
+msgid "Update Issue"
+msgstr "更新问题"
+
+#: ../mim-custom-class.php:82
+msgid "Add New Issue"
+msgstr "添加新发行"
+
+#: ../mim-custom-class.php:83
+msgid "New Issue Name"
+msgstr "新发行名称"
+
+#: ../mim-custom-class.php:84
+msgid "Separate issues with commas"
+msgstr "用逗号分开的问题"
+
+#: ../mim-custom-class.php:85
+msgid "Add or remove issues"
+msgstr "添加或删除的问题"
+
+#: ../mim-custom-class.php:86
+msgid "Choose from the most used issues"
+msgstr "您可以选择最常用的问题"
+
+#: ../mim-custom-class.php:87
+msgid "No issues found."
+msgstr "没有发现的问题。"
+
+#: ../mim-custom-class.php:109 ../mim-custom-class.php:124
+msgid "Magazine Category"
+msgstr "杂志类别"
+
+#: ../mim-custom-class.php:110
+msgid "Magazine Categorys"
+msgstr "请仔细杂志"
+
+#: ../mim-custom-class.php:111
+msgid "Search Magazine Category"
+msgstr "搜索类杂志"
+
+#: ../mim-custom-class.php:112
+msgid "Popular Magazine Category"
+msgstr "流行的杂志类别"
+
+#: ../mim-custom-class.php:113
+msgid "All Magazine Category"
+msgstr "所有杂志分类"
+
+#: ../mim-custom-class.php:116
+msgid "Edit Magazine Category"
+msgstr "编辑类杂志"
+
+#: ../mim-custom-class.php:117
+msgid "Update Magazine Category"
+msgstr "更新类杂志"
+
+#: ../mim-custom-class.php:118
+msgid "Add New Magazine Category"
+msgstr "添加新的杂志类别"
+
+#: ../mim-custom-class.php:119
+msgid "New Magazine Category Name"
+msgstr "新的杂志类别名称"
+
+#: ../mim-custom-class.php:120
+msgid "Separate Magazine Category with commas"
+msgstr "独立的杂志类别用逗号"
+
+#: ../mim-custom-class.php:121
+msgid "Add or remove Magazine Category"
+msgstr "添加或删除类杂志"
+
+#: ../mim-custom-class.php:122
+msgid "Choose from the most used Magazine Category"
+msgstr "您可以选择最常用的杂志类别"
+
+#: ../mim-custom-class.php:123
+msgid "No Magazine Category found."
+msgstr "无类杂志找到。"
+
+#: ../mim-restriction-editors.php:102
+msgid "Most Used"
+msgstr "最常用的"
+
+#: ../mim-restriction-editors.php:135 ../mim-restriction-editors.php:169
+#, fuzzy
+msgid "</label></li>"
+msgstr ""
+
+#: ../mim-posttype-taxonomy.php:36 ../mim-posttype-taxonomy.php:134
+msgid "Select&nbsp;&nbsp;Issue Category"
+msgstr "请选择问题类别"
+
+#: ../mim-posttype-taxonomy.php:50
+msgid ""
+"Selected categories will be displayed in published issue. <br> To add magazine "
+"categories,"
+msgstr "选定的类别将显示在发布的问题。<br> 要添加杂志类别，选择问题类别"
+
+#: ../mim-posttype-taxonomy.php:50 ../mim-posttype-taxonomy.php:164
+msgid "Click here."
+msgstr "点击这里。"
+
+#: ../mim-posttype-taxonomy.php:57 ../mim-posttype-taxonomy.php:172 ../mim-posttype-taxonomy.php:435
+msgid "Cover Image"
+msgstr "封面图片"
+
+#: ../mim-posttype-taxonomy.php:62 ../mim-posttype-taxonomy.php:178
+msgid "Upload"
+msgstr "上载"
+
+#: ../mim-posttype-taxonomy.php:63 ../mim-posttype-taxonomy.php:179
+msgid "Remove Image"
+msgstr "移除图片"
+
+#: ../mim-posttype-taxonomy.php:64
+msgid ""
+"Cover image size is dynamic or static? If static, change it to get dynamic "
+"value from plugin settings."
+msgstr "封面图片的大小是动态的还是静态的？如果静态的，将其更改为从插件的设置得到动态的价值。"
+
+#: ../mim-posttype-taxonomy.php:64
+msgid "You must upload"
+msgstr "你必须上传"
+
+#: ../mim-posttype-taxonomy.php:64
+msgid " size of image."
+msgstr "图像的尺寸。"
+
+#: ../mim-posttype-taxonomy.php:67 ../mim-posttype-taxonomy.php:185
+msgid "Issue PDF"
+msgstr "问题PDF"
+
+#: ../mim-posttype-taxonomy.php:69 ../mim-posttype-taxonomy.php:196
+msgid "Add File"
+msgstr "添加文件"
+
+#: ../mim-posttype-taxonomy.php:70 ../mim-posttype-taxonomy.php:197
+msgid "Remove File"
+msgstr "删除文件"
+
+#: ../mim-posttype-taxonomy.php:71 ../mim-posttype-taxonomy.php:198
+msgid "Upload PDF for issue if you would like to manage issues as PDF."
+msgstr "上传PDF格式的问题，如果你想管理的问题为PDF。"
+
+#: ../mim-posttype-taxonomy.php:74 ../mim-posttype-taxonomy.php:205
+msgid "Issue Publish Date"
+msgstr "问题发布日期"
+
+#: ../mim-posttype-taxonomy.php:76 ../mim-posttype-taxonomy.php:208
+msgid "Issue Publish Date (Format: YYYY-MM-DD)"
+msgstr "问题发布日期（格式：YYYY-MM-DD）"
+
+#: ../mim-posttype-taxonomy.php:117
+msgid "Select Master Category"
+msgstr "选择主类别"
+
+#: ../mim-posttype-taxonomy.php:130
+msgid "Select master category here."
+msgstr "在这里选择主类。"
+
+#: ../mim-posttype-taxonomy.php:164
+msgid ""
+"Selected categories will be displayed in published issue. To add magazine "
+"categories, "
+msgstr "选定的类别将显示在发布的问题。要添加杂志类，"
+
+#: ../mim-posttype-taxonomy.php:164
+msgid ""
+"If you checked issue catgeory then you must click on update button then all "
+"checked categories will be reflected in select master category."
+msgstr "如果选中问题catgeory，那么你必须在更新按钮，然后单击选中所有类别将反映在选择主类。"
+
+#: ../mim-posttype-taxonomy.php:180
+msgid ""
+"Cover image size is dynamic or static? If static, change it to get dynamic "
+"value from plugin settings.<br/>You must upload"
+msgstr "封面图片的大小是动态的还是静态的？如果静态的，将其更改为从插件的设置得到动态的价值。<br/>你必须上传"
+
+#: ../mim-posttype-taxonomy.php:180
+msgid "size of image."
+msgstr "图像的尺寸。"
+
+#: ../mim-posttype-taxonomy.php:331
+msgid "Show All Issues"
+msgstr "显示所有问题"
+
+#: ../mim-posttype-taxonomy.php:363
+msgid "Show All Magazine Category"
+msgstr "显示所有杂志分类"
+
+#: ../mim-posttype-taxonomy.php:436
+msgid "Name"
+msgstr "名称"
+
+#: ../mim-posttype-taxonomy.php:437
+msgid "Issue Menu"
+msgstr "菜单的问题"
+
+#: ../mim-posttype-taxonomy.php:438
+msgid "Issue Date"
+msgstr "发行日期"
+
+#: ../mim-posttype-taxonomy.php:439
+msgid "No of Issue"
+msgstr "没有问题的"
+
+#: ../mim-posttype-taxonomy.php:520
+msgid "Featured Image"
+msgstr "特色图片"
+
+#: ../index.php:104
+msgid "Default Issue"
+msgstr "默认情况下发行"
+
+#: ../index.php:107
+msgid "This is Default Issue."
+msgstr "这是默认的问题。"
+
+#: ../index.php:108
+msgid "default-issue"
+msgstr "默认情况下，问题"
+
+#: ../index.php:115
+msgid "Default Magazine Category"
+msgstr "默认的杂志类别"
+
+#: ../index.php:118
+msgid "This is Default Magazine Category."
+msgstr "这是默认的杂志类别。"
+
+#: ../index.php:119
+msgid "default-magazine"
+msgstr "默认杂志"
+
+#: ../mim-issue-class.php:30 ../mim-issue-class.php:30
+msgid "MIM Issue Settings"
+msgstr "MIM设置问题"
+
+#: ../mim-issue-class.php:31 ../mim-issue-class.php:31 ../mim-issue-class.php:68
+msgid "MIM Plugin Help"
+msgstr "MIM插件帮助"
+
+#: ../mim-issue-class.php:72
+msgid "User Guide (PDF)"
+msgstr "用戶指南（PDF）"
+
+#: ../mim-issue-class.php:73
+msgid "Download User Guide"
+msgstr "下載用戶指南"
+
+#: ../mim-issue-class.php:74
+msgid "for Manage Issue Based Magazine Plugin"
+msgstr "對於管理發行基於插件雜誌"
+
+#: ../mim-issue-class.php:75
+msgid "OR"
+msgstr "或"
+
+#: ../mim-issue-class.php:76
+msgid "For more information visit website : "
+msgstr "欲了解更多信息，請訪問網站："
+
+#: ../mim-issue-class.php:102
+msgid "Sorry, your nonce did not verify."
+msgstr "对不起，您的随机数没有验证。"
+
+#: ../mim-issue-class.php:165
+msgid "Magazine Issue General Settings"
+msgstr "杂志发行常规设置"
+
+#: ../mim-issue-class.php:167
+msgid "Submitted Successfully"
+msgstr "成功提交"
+
+#: ../mim-issue-class.php:174
+msgid "General Settings"
+msgstr "常规设置"
+
+#: ../mim-issue-class.php:182
+msgid "Display full article on category page"
+msgstr "显示类别页全文"
+
+#: ../mim-issue-class.php:183
+msgid ""
+"<i><p style=\"font-weight: normal;\">(If this option is set to 'Yes', when single "
+"article is there in category and you want to display full article on category "
+"page)</p></i>"
+msgstr "<i><p style=\"font-weight: normal;\">（如果此选项设置为“是”，当单篇文章是在有类别和要显示分类页面上全文）</p></i>"
+
+#: ../mim-issue-class.php:197
+msgid "Allow users to post articles in past issue"
+msgstr "允许用户张贴在过去的问题的文章"
+
+#: ../mim-issue-class.php:198
+msgid ""
+"<i><p style=\"font-weight: normal;\">(If this option is set to 'Yes', logged in "
+"user would be able to post articles in past issues)</p></i>"
+msgstr "<i><p style=\"font-weight: normal;\">（如果此选项设置为“是”，登录的用户将能够张贴在过去的问题的文章）</p></i>"
+
+#: ../mim-issue-class.php:213
+msgid "Default article status for editors"
+msgstr "对编辑器的默认状态条"
+
+#: ../mim-issue-class.php:214
+msgid ""
+"<i><p style=\"font-weight: normal;\">(Default article status when editors add new "
+"articles. This feature is useful for moderation of posted articles)</p></i>"
+msgstr "<i><p style=\"font-weight: normal;\">（编辑时添加新的文章默认文章状态。此功能对于发布文章的适度有用）</p></i>"
+
+#: ../mim-issue-class.php:220 ../mim-issue-class.php:255
+msgid "Approved"
+msgstr "批准"
+
+#: ../mim-issue-class.php:220
+msgid "Pending"
+msgstr "有待"
+
+#: ../mim-issue-class.php:230
+msgid "Editors can register from website"
+msgstr "编辑者可以从网站注册"
+
+#: ../mim-issue-class.php:231
+msgid ""
+"<i><p style=\"font-weight: normal;\">(If this option is set to 'Yes', link will "
+"be displayed on website to register)</p></i>"
+msgstr "<i><p style=\"font-weight: normal;\">（如果此选项设置为“是”，链接将被显示在网站进行注册）</p></i>"
+
+#: ../mim-issue-class.php:247
+msgid "New editor status"
+msgstr "新的编辑器状态"
+
+#: ../mim-issue-class.php:248
+msgid ""
+"<i><p style=\"font-weight: normal;\">(Default status for users when they get "
+"registered from website)</p></i>"
+msgstr "<i><p style=\"font-weight: normal;\">（对用户的默认状态时，他们得到的网站注册）</p></i>"
+
+#: ../mim-issue-class.php:255
+msgid "Non-Approved"
+msgstr "未經批准"
+
+#: ../mim-issue-class.php:265
+msgid "Cover image dimensions"
+msgstr "封面图片尺寸"
+
+#: ../mim-issue-class.php:266
+msgid ""
+"<i><p style=\"font-weight: normal;\">(Best size for your cover image. Thumbnail "
+"will be created with specified dimentions)</p></i>"
+msgstr "<i><p style=\"font-weight: normal;\">（最佳大小为您的封面图片。缩略图将与指定的dimentions创建）</p></i>"
+
+#: ../mim-issue-class.php:276
+msgid "Width  :"
+msgstr "宽度："
+
+#: ../mim-issue-class.php:276 ../mim-issue-class.php:277
+msgid "px"
+msgstr "px"
+
+#: ../mim-issue-class.php:277
+msgid "Height :"
+msgstr "身高："
+
+#: ../mim-issue-class.php:282
+msgid "Number of articles displayed per page"
+msgstr "中每页显示的文章数"
+
+#: ../mim-issue-class.php:283
+msgid ""
+"<i><p style=\"font-weight: normal;\">(Specified number of articles will be listed "
+"on each page on article listing page)</p></i>"
+msgstr "<i><p style=\"font-weight: normal;\">（文章指定数量将在文章列表页中每一页上列出）</p></i>"
+
+#: ../mim-issue-class.php:300
+msgid "Search behaviour (Within current issue or site wide)"
+msgstr "搜索行为（在本期杂志或网站宽）"
+
+#: ../mim-issue-class.php:301
+msgid ""
+"<i><p style=\"font-weight: normal;\">(If set to 'Within current issue', search "
+"will be perfomed only on current selected issue. If set to 'Site wide', search "
+"will be perfomed on all issues)</p></i>"
+msgstr ""
+"<i><p style=\"font-weight: normal;"
+"\">（如果设置为“在当前的问题”，搜索将只在当前选择的问题perfomed。如果设置为“网站广”，搜索将被perfomed对所有问题）</p></i>"
+
+#: ../mim-issue-class.php:306
+msgid "Yes"
+msgstr "是的"
+
+#: ../mim-issue-class.php:306
+msgid "Within current issue"
+msgstr "在当前的问题"
+
+#: ../mim-issue-class.php:307
+msgid "No"
+msgstr "不"
+
+#: ../mim-issue-class.php:307
+msgid "Site wide"
+msgstr "网站广泛"
+
+#: ../mim-issue-class.php:347
+msgid "Current Issue"
+msgstr "本期目录"
+
+#: ../mim-issue-class.php:348
+msgid ""
+"<i><p style=\"font-weight: normal;\">(Issue set as default issue when website is "
+"loaded)</p></i>"
+msgstr "<i><p style=\"font-weight: normal;\">（问题时，网站加载设置为默认值的问题）</p></i>"
+
+#: ../mim-issue-class.php:355
+msgid "Select Current Issue"
+msgstr "選擇當前發行"
+
+#: ../mim-issue-class.php:364
+msgid "Save Settings"
+msgstr "保存设置"
+
+#: ../mim-user-field.php:14
+msgid "User Status Updating"
+msgstr "用户状态更新"
+
+#: ../mim-user-field.php:18
+msgid "User Status"
+msgstr "用户状态"
+
+#: ../mim-user-field.php:98
+msgid "Status"
+msgstr "状态"
+
+#: ../mim-user-field.php:149
+msgid "<strong>ERROR</strong>: Your account is still pending approval."
+msgstr "<strong>错误</strong>: 您的帐户仍在等待批准。"
+
+#: ../mim-user-field.php:176
+msgid "USERNAME (USEREMAIL) has requested a username at SITENAME"
+msgstr "用戶名（用戶電子郵件地址）已要求用戶名在站台名稱"
+
+#: ../mim-user-field.php:178
+msgid "To approve or deny this user access to SITENAME go to"
+msgstr "   批准或拒絕該用戶訪問站點名去"
+
+#: ../mim-user-field.php:191
+msgid "[%s] User Approval"
+msgstr "的用戶認證"
