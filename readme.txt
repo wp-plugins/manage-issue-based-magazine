@@ -2,8 +2,8 @@
 Contributors: PurpleMAD
 Tags: Magazine Issue Manage, Magazine, Issue Manager, Issue, Issues, Magazine Issue, Manage Issue Based Magazine
 Requires at least: 3.8.1
-Tested up to: 3.8.1
-Stable tag: 1.1
+Tested up to: 4.0
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -67,7 +67,7 @@ Click here for [Plugin Demo](http://mim.purplemadprojects.com/)
 
 For Manage Issue Based Magazine Plugin [Download User Guide](http://mim.purplemadprojects.com/User-Guide-for-Manage-Issue-Based-Magazine-Plugin.pdf) 
 
-Plugin Developed by PurpleMAD [Visit website](http://www.purplemad.ca)
+Plugin Developed by PurpleMAD by PurpleMAD [Visit website](http://www.purplemad.ca)
 
 == Installation ==
 
@@ -109,6 +109,12 @@ Plugin Developed by PurpleMAD [Visit website](http://www.purplemad.ca)
 == Changelog ==
 = 1.0 =
 * First version.
+
+= 1.1 =
+* Updated version.
+
+= 1.2 =
+* Resolved upload issue in taxonomy.
 
 == Upgrade Notice ==
 Click here for [Plugin Demo](http://mim.purplemadprojects.com/) 

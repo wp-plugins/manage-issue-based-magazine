@@ -3,7 +3,7 @@
 Plugin Name: Magazine Issue Manager
 Plugin URI: http://mim.purplemadprojects.com/
 Description: To manage issue based online publication content. Using this plugin site owner can publish cotent in issues using either WordPress categorized article features or in form of PDFs. Site owner can plan content in terms of periodic issues and users can browse content by selecting issues on website.
-Version: 1.1
+Version: 1.2
 Text Domain: mim-issue
 Author: PurpleMAD
 Author URI: http://www.purplemad.ca/

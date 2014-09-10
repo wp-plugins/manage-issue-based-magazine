@@ -26,6 +26,7 @@ jQuery(document).ready(function() {
 						 className: 'media-frame loc_file',
 						 frame: 'select', //Allow Select Only
 						 multiple: false, //Disallow Mulitple selections
+						 
 			});
 			
 			 loc_file.on('select', function(){
