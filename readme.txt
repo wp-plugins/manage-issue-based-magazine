@@ -2,8 +2,8 @@
 Contributors: PurpleMAD
 Tags: Magazine Issue Manage, Magazine, Issue Manager, Issue, Issues, Magazine Issue, Manage Issue Based Magazine
 Requires at least: 3.8.1
-Tested up to: 4.0
-Stable tag: 1.2
+Tested up to: 4.1
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -57,6 +57,15 @@ Upload your magazine as an exclusive pdf magazine, making it easier to publish p
 = 4. Efficient Search Behavior =
 If people are coming back to search for something in your magazine that's a good sign. Make life easy for your readers by making the search more effective. Issue Based Magazine gives you the option to let your readers search for content site-wide or in specific issue. 
 
+= 5. Easy Drag And Drop Widgets =
+For making issue categories, current issue and magazine categories more handy, Following widgets are created :
+  
+  * MIM Current Issue Widget: Displays current issue title and image if current issue is selected in MIM issue settings.
+  * MIM Current Issue Category Widget: Displays list of issue categories for current issue.
+  * MIM Issue Article Listing Widget: Displays list of articles for current issue.
+  * MIM Issue Listing Widget: Displays list of all Issues.
+
+
 = Coming Soon - Features in next upgrade =
 *  Export magazine issues as PDF. 
 *  Publish subscription based magazines. 
@@ -104,6 +113,11 @@ Plugin Developed by PurpleMAD [Visit website](http://www.purplemad.ca)
 6. Demo Of Issue Listing In Website View.
 7. Demo Of Home Page View. [Visit Home Page](http://mim.purplemadprojects.com/)
 8. Shortcode Samples. [Check More Samples](http://mim.purplemadprojects.com/sample-shortcode/)
+9. Displays Widgets.
+10. Added Features in Magazine Issue General Settings.
+11. Displays Issue categories in Primary Menu.
+12. Displays Magazine Listing.
+13. Displays Issue Listing.
 
 
 == Changelog ==
@@ -115,6 +129,9 @@ Plugin Developed by PurpleMAD [Visit website](http://www.purplemad.ca)
 
 = 1.2 =
 * Resolved upload issue in taxonomy.
+
+= 1.3 =
+* Add drag and drop widgets and more updates in the plugin.
 
 == Upgrade Notice ==
 Click here for [Plugin Demo](http://mim.purplemadprojects.com/) 

@@ -3,6 +3,8 @@ if ( ! class_exists( 'MIM_Issue' ) ) {
 	
 	class MIM_Issue{
 		
+		
+
 		/**
 		* Default Constructor called.
 		*
@@ -31,7 +33,6 @@ if ( ! class_exists( 'MIM_Issue' ) ) {
 			add_submenu_page( 'edit.php?post_type=magazine', __( 'MIM Plugin Help', 'mim-issue' ), __( 'MIM Plugin Help', 'mim-issue' ), 'manage_options', 'help', array( $this, 'mim_issue_help_page' ) );
 		
 		}
-		
 		/**
 		* Added Cover image size.
 		*
@@ -136,6 +137,15 @@ if ( ! class_exists( 'MIM_Issue' ) ) {
 				  
 				  $mim_current_issue= !empty($_REQUEST['cat']) ? $_REQUEST['cat'] : 'Select Current Issue';
 				  update_option('mim_current_issue',$mim_current_issue);
+				   
+				  $mim_issue_menu_category= !empty($_REQUEST['mim_issue_menu_category']) ;
+				  update_option('mim_issue_menu_category',$mim_issue_menu_category);
+				  
+				  $page_for_magazines= !empty($_REQUEST['page_for_magazines']) ? $_REQUEST['page_for_magazines'] : 'Select';
+				  update_option('page_for_magazines',$page_for_magazines);
+				  
+				  $page_for_archives= !empty($_REQUEST['page_for_archives']) ? $_REQUEST['page_for_archives'] : 'Select';
+				  update_option('page_for_archives',$page_for_archives);
 				 		
 				 ?>
 				 <script>
@@ -177,7 +187,29 @@ if ( ! class_exists( 'MIM_Issue' ) ) {
                         
 				                        <table  id="mim-issue-table">
 										<tbody>
-										
+				                            <tr>
+				                                <th rowspan="1">  <?php _e( 'Page for Magazines', 'mim-issue' ); ?>
+				                                <?php _e( '<i><p style="font-weight: normal;">(Displays Magazine Listing On Selected Page,If selected page is empty)</p></i>', 'mim-issue' ); ?>	
+				                                </th>
+				                                <td>
+												<?php
+												$page_for_magazines=get_option('page_for_magazines');
+												$page_for_magazines_selected = !empty($page_for_magazines)? $page_for_magazines : '-1';
+												echo wp_dropdown_pages( array( 'name' => 'page_for_magazines', 'echo' => 0, 'show_option_none' => __( '&mdash; Select &mdash;' ), 'option_none_value' => '0','selected'=>$page_for_magazines_selected));	?>								
+												</td>
+				                            </tr>
+				                            <tr>
+				                                <th rowspan="1">  <?php _e( 'Page for Issues Archives', 'mim-issue' ); ?>
+				                                <?php _e( '<i><p style="font-weight: normal;">(Displays Issue Listing On Selected Page,If selected page is empty)</p></i>', 'mim-issue' ); ?>	
+				                                </th>
+				                                <td>
+												<?php
+												$page_for_archives=get_option('page_for_archives');
+												$page_for_archives_selected = !empty($page_for_archives)? $page_for_archives : '-1';
+												//print_r($page_for_archives_selected);
+												echo wp_dropdown_pages( array( 'name' => 'page_for_archives', 'echo' => 0, 'show_option_none' => __( '&mdash; Select &mdash;' ), 'option_none_value' => '0','selected'=>$page_for_archives_selected));	?>								
+												</td>
+				                            </tr>
 											<tr>
 				                                <th rowspan="1"> <?php _e( 'Display full article on category page', 'mim-issue' ); ?>
 													<?php _e( '<i><p style="font-weight: normal;">(If this option is set to \'Yes\', when single article is there in category and you want to display full article on category page)</p></i>', 'mim-issue' ); ?>
@@ -350,13 +382,26 @@ function modified_pre_get_posts( $query ) { <br/>
 				                                <td>
 												<?php
 													$mim_current_issue=get_option('mim_current_issue');
+													//print_r($mim_current_issue);
 													$mim_current_issue_selected = !empty($mim_current_issue)? $mim_current_issue : '-1';
 													$mim_current_selected='selected='.$mim_current_issue_selected;
 													wp_dropdown_categories('show_option_none='.__("Select Current Issue", 'mim-issue').'&orderby=name&echo=1&taxonomy=issues&hide_empty=0&'.$mim_current_selected);?>													
 												</td>
 				                            </tr>
-											
-											
+				                            <tr>
+				                                <th rowspan="1"> <?php _e( 'Issue Category', 'mim-issue' ); ?>
+				                                <?php _e( '<i><p style="font-weight: normal;">(Issue Category if checked displays all Current Issue Categories in Primary Menu)</p></i>', 'mim-issue' ); ?>
+												</th>
+				                                <td>
+				                                <?php
+				                                  $mim_issue_menu_category=get_option('mim_issue_menu_category');
+				                                  $mim_issue_menu_category_selected = !empty($mim_issue_menu_category) ? $mim_issue_menu_category : '0';
+				                                ?>
+				                                <input type="checkbox" id="mim_issue_menu_category" name="mim_issue_menu_category" <?php checked( $mim_issue_menu_category_selected); ?>"/>Display Current Issue Menu Categories<br/>
+				                                
+				                                </td>
+				                           </tr>
+				                         			
 										</tbody>	
 				                        </table>
                         				<?php wp_nonce_field( 'mim_issue_general_setting', 'mim_issue_nonce' ); ?>
@@ -372,6 +417,7 @@ function modified_pre_get_posts( $query ) { <br/>
            	    </div>
 			</div>
 			<?php
+			
 		}
 	}	
 }	

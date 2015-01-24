@@ -3,7 +3,7 @@
 Plugin Name: Magazine Issue Manager
 Plugin URI: http://mim.purplemadprojects.com/
 Description: To manage issue based online publication content. Using this plugin site owner can publish cotent in issues using either WordPress categorized article features or in form of PDFs. Site owner can plan content in terms of periodic issues and users can browse content by selecting issues on website.
-Version: 1.2
+Version: 1.3
 Text Domain: mim-issue
 Author: PurpleMAD
 Author URI: http://www.purplemad.ca/
@@ -40,7 +40,8 @@ function mim_issue_plugin_load_function(){
 		}
 		require_once('mim-restriction-editors.php');
 		require_once('mim-shortcode.php');
-
+		require_once('mim-widgets.php');
+		require_once('mim-functions.php');
 	}
 	
 	# Load the language files
@@ -95,7 +96,10 @@ function min_activate(){
 		add_option('mim_cover_height','450','', 'yes');
 		add_option('mim_post_per_page_article','5','', 'yes');
 		add_option('mim_search_behaviour','Yes','', 'yes');		
-		add_option('mim_current_issue','-1','', 'yes');		
+		add_option('mim_current_issue','-1','', 'yes');	
+		add_option('mim_issue_menu_category');	
+		add_option('page_for_magazines','-1','', 'Select');	
+		add_option('page_for_archives','-1','', 'Select');		
 		
 		require_once( 'mim-custom-class.php' );
 		$mim_custom=new MIM_Custom();
@@ -142,6 +146,9 @@ function min_deactivate(){
 	delete_option('mim_post_per_page_article');
 	delete_option('mim_search_behaviour');
 	delete_option('mim_current_issue');
+	delete_option('mim_issue_menu_category');
+	delete_option('page_for_magazines');
+	delete_option('page_for_archives');
 }
 	
 /**
@@ -167,6 +174,9 @@ function mim_uninstall(){
 	delete_option('mim_search_behaviour');
 	delete_option('mim_issue_menu_type');
 	delete_option('mim_current_issue');
+	delete_option('mim_issue_menu_category');
+	delete_option('page_for_magazines');
+	delete_option('page_for_archives');
 }
 
 /**
@@ -182,5 +192,57 @@ add_action( 'init', 'wpdbfix');
 function wpdbfix() {
 	global $wpdb;
 	$wpdb->taxonomymeta = "{$wpdb->prefix}taxonomymeta";
+	
+	$mim_issue_menu_category=get_option('mim_issue_menu_category');	
+	$mim_issue_menu_category_selected = !empty($mim_issue_menu_category) ? $mim_issue_menu_category : '0';
+	if($mim_issue_menu_category_selected!='0')
+	{
+		$theme_locations = get_nav_menu_locations();
+		if($theme_locations[primary]!=0)
+		{	
+			add_filter('wp_nav_menu_items','add_issue_categories_items', 10, 2);		
+		}
+		else
+		{	
+			add_filter( 'wp_page_menu_args', 'primary_menu_items');	
+
+		}
+	}
+	
+	
+	
 }
+function add_issue_categories_items( $nav, $args )
+{
+	if( $args->theme_location == 'primary' )
+	{
+		
+		$mim_current_issue_id=get_option('mim_current_issue');
+		if(!empty($mim_current_issue_id))
+		{
+			$mim_category_id=get_metadata('taxonomy', $mim_current_issue_id, 'mim_issue_menu_category', true) ;
+			$taxonomy='magazine_category';
+		
+			if(!empty($mim_category_id)) 
+							{
+								
+								foreach($mim_category_id as $mim_cat_name => $mim_cat_value ) 
+								{		
+									$cat_name=get_term_by('id',$mim_cat_value,'magazine_category',ARRAY_A) ;	
+									if(($cat_name['name'])!="")
+									{
+										$nav .='<li class="page_item page-item-'.$mim_category_id.'"><a href="'.get_term_link($cat_name['slug'],$taxonomy).'">'.$cat_name['name'].'</a></li>';
+									}
+								}	
+							}		
+		
+		}
+	}
+return $nav;
+}
+function primary_menu_items( $args ) {
+	$args['show_home'] = true;
+	return $args;
+}
+
 ?>
