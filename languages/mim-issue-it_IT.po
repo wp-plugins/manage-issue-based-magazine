@@ -1,0 +1,575 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Magazine Issue Manager\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Fri Mar 14 2014 15:14:34 GMT+0530 (India Standard Time)\n"
+"PO-Revision-Date: Thu Mar 27 2014 17:27:14 GMT+0530 (India Standard Time)\n"
+"Last-Translator: admin <application.qa2@gmail.com>\n"
+"Language-Team: \n"
+"Language: Italian\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: ITALY\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;__:1;"
+"_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;_x:1,2c;"
+"_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;esc_attr__:1;"
+"esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;esc_html_x:1,2c;"
+"comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes\n"
+"X-Loco-Target-Locale: it_IT"
+
+#: ../mim-restriction-editors.php:135 ../mim-restriction-editors.php:169
+msgid "</label></li>"
+msgstr ""
+
+#: ../mim-custom-class.php:35 ../mim-custom-class.php:36
+msgid "Magazine"
+msgstr "rivista"
+
+#: ../mim-custom-class.php:37
+msgid "Add New"
+msgstr "Aggiungi nuovo"
+
+#: ../mim-custom-class.php:38
+msgid "Add New Magazine"
+msgstr "Aggiungi nuovo Magazine"
+
+#: ../mim-custom-class.php:39
+msgid "Edit Magazine"
+msgstr "Modifica Magazine"
+
+#: ../mim-custom-class.php:40
+msgid "New Magazine"
+msgstr "New Magazine"
+
+#: ../mim-custom-class.php:41
+msgid "All Magazines"
+msgstr "Tutte le Riviste"
+
+#: ../mim-custom-class.php:42
+msgid "View Magazine"
+msgstr "vista Magazine"
+
+#: ../mim-custom-class.php:43
+msgid "Search Magazines"
+msgstr "Cerca Riviste"
+
+#: ../mim-custom-class.php:44
+msgid "No magazines  found"
+msgstr "Nessun riviste trovato"
+
+#: ../mim-custom-class.php:45
+msgid "No magazines  found in Trash"
+msgstr "Nessun riviste trovato in pattumiera"
+
+#: ../mim-custom-class.php:47
+msgid "Magazines"
+msgstr "riviste"
+
+#: ../mim-custom-class.php:73 ../mim-custom-class.php:88
+msgid "Issues"
+msgstr "Problemi"
+
+#: ../mim-custom-class.php:74
+msgid "Issue"
+msgstr "questione"
+
+#: ../mim-custom-class.php:75
+msgid "Search Issues"
+msgstr "problemi di ricerca"
+
+#: ../mim-custom-class.php:76
+msgid "Popular Issues"
+msgstr "Problemi popolari"
+
+#: ../mim-custom-class.php:77
+msgid "All Issues"
+msgstr "tutti i numeri"
+
+#: ../mim-custom-class.php:80
+msgid "Edit Issue"
+msgstr "Modifica Issue"
+
+#: ../mim-custom-class.php:81
+msgid "Update Issue"
+msgstr "aggiornamento Issue"
+
+#: ../mim-custom-class.php:82
+msgid "Add New Issue"
+msgstr "Aggiungi nuovo Edizione"
+
+#: ../mim-custom-class.php:83
+msgid "New Issue Name"
+msgstr "Nuovo nome Issue"
+
+#: ../mim-custom-class.php:84
+msgid "Separate issues with commas"
+msgstr "Questioni separate con virgole"
+
+#: ../mim-custom-class.php:85
+msgid "Add or remove issues"
+msgstr "Aggiungere o rimuovere i problemi"
+
+#: ../mim-custom-class.php:86
+msgid "Choose from the most used issues"
+msgstr "Scegli tra le questioni più utilizzati"
+
+#: ../mim-custom-class.php:87
+msgid "No issues found."
+msgstr "Nessun problema trovato."
+
+#: ../mim-custom-class.php:109 ../mim-custom-class.php:124
+msgid "Magazine Category"
+msgstr "Magazine Categoria"
+
+#: ../mim-custom-class.php:110
+msgid "Magazine Categorys"
+msgstr "Categorys Magazine"
+
+#: ../mim-custom-class.php:111
+msgid "Search Magazine Category"
+msgstr "Cerca Rivista Categoria"
+
+#: ../mim-custom-class.php:112
+msgid "Popular Magazine Category"
+msgstr "Popular Magazine Categoria"
+
+#: ../mim-custom-class.php:113
+msgid "All Magazine Category"
+msgstr "Tutto Magazine Categoria"
+
+#: ../mim-custom-class.php:116
+msgid "Edit Magazine Category"
+msgstr "Modifica Magazine Categoria"
+
+#: ../mim-custom-class.php:117
+msgid "Update Magazine Category"
+msgstr "Aggiornamento Magazine Categoria"
+
+#: ../mim-custom-class.php:118
+msgid "Add New Magazine Category"
+msgstr "Aggiungi nuovo Magazine Categoria"
+
+#: ../mim-custom-class.php:119
+msgid "New Magazine Category Name"
+msgstr "New Magazine Nome Categoria"
+
+#: ../mim-custom-class.php:120
+msgid "Separate Magazine Category with commas"
+msgstr "Separata Magazine Categoria con una virgola"
+
+#: ../mim-custom-class.php:121
+msgid "Add or remove Magazine Category"
+msgstr "Aggiungere o rimuovere Magazine Categoria"
+
+#: ../mim-custom-class.php:122
+msgid "Choose from the most used Magazine Category"
+msgstr "Scegli tra le più utilizzate Magazine Categoria"
+
+#: ../mim-custom-class.php:123
+msgid "No Magazine Category found."
+msgstr "Nessun Magazine Category trovato."
+
+#: ../mim-restriction-editors.php:102
+msgid "Most Used"
+msgstr "più usate"
+
+#: ../mim-posttype-taxonomy.php:36 ../mim-posttype-taxonomy.php:134
+msgid "Select&nbsp;&nbsp;Issue Category"
+msgstr "Seleziona Issue Categoria"
+
+#: ../mim-posttype-taxonomy.php:50
+msgid ""
+"Selected categories will be displayed in published issue. <br> To add magazine "
+"categories,"
+msgstr ""
+"Categorie selezionate verranno visualizzate nel numero pubblicato. <br> Per "
+"aggiungere categorie di riviste,"
+
+#: ../mim-posttype-taxonomy.php:50 ../mim-posttype-taxonomy.php:164
+msgid "Click here."
+msgstr "Clicca qui."
+
+#: ../mim-posttype-taxonomy.php:57 ../mim-posttype-taxonomy.php:172 ../mim-posttype-taxonomy.php:435
+msgid "Cover Image"
+msgstr "Immagine di copertina"
+
+#: ../mim-posttype-taxonomy.php:62 ../mim-posttype-taxonomy.php:178
+msgid "Upload"
+msgstr "caricare"
+
+#: ../mim-posttype-taxonomy.php:63 ../mim-posttype-taxonomy.php:179
+msgid "Remove Image"
+msgstr "rimuovere Immagine"
+
+#: ../mim-posttype-taxonomy.php:64
+msgid ""
+"Cover image size is dynamic or static? If static, change it to get dynamic "
+"value from plugin settings."
+msgstr ""
+"Dimensione immagine di copertina è dinamico o statico? Se statica, modificarlo "
+"per ottenere valore dinamico dalle impostazioni del plugin."
+
+#: ../mim-posttype-taxonomy.php:64
+msgid "You must upload"
+msgstr "È necessario caricare"
+
+#: ../mim-posttype-taxonomy.php:64
+msgid " size of image."
+msgstr "dimensione dell'immagine."
+
+#: ../mim-posttype-taxonomy.php:67 ../mim-posttype-taxonomy.php:185
+msgid "Issue PDF"
+msgstr "PDF Issue"
+
+#: ../mim-posttype-taxonomy.php:69 ../mim-posttype-taxonomy.php:196
+msgid "Add File"
+msgstr "Aggiungi file"
+
+#: ../mim-posttype-taxonomy.php:70 ../mim-posttype-taxonomy.php:197
+msgid "Remove File"
+msgstr "Rimuovi file"
+
+#: ../mim-posttype-taxonomy.php:71 ../mim-posttype-taxonomy.php:198
+msgid "Upload PDF for issue if you would like to manage issues as PDF."
+msgstr "Upload PDF per il problema se si desidera gestire questioni come PDF."
+
+#: ../mim-posttype-taxonomy.php:74 ../mim-posttype-taxonomy.php:205
+msgid "Issue Publish Date"
+msgstr "Issue Data di pubblicazione"
+
+#: ../mim-posttype-taxonomy.php:76 ../mim-posttype-taxonomy.php:208
+msgid "Issue Publish Date (Format: YYYY-MM-DD)"
+msgstr "Issue Data di pubblicazione (formato: YYYY-MM-DD)"
+
+#: ../mim-posttype-taxonomy.php:117
+msgid "Select Master Category"
+msgstr "Selezionare categorie principali"
+
+#: ../mim-posttype-taxonomy.php:130
+msgid "Select master category here."
+msgstr "Selezionare Categoria Master qui."
+
+#: ../mim-posttype-taxonomy.php:164
+msgid ""
+"Selected categories will be displayed in published issue. To add magazine "
+"categories, "
+msgstr ""
+"Categorie selezionate verranno visualizzate nel numero pubblicato. Per "
+"aggiungere categorie di riviste,"
+
+#: ../mim-posttype-taxonomy.php:164
+msgid ""
+"If you checked issue catgeory then you must click on update button then all "
+"checked categories will be reflected in select master category."
+msgstr ""
+"Se è stata selezionata problema catgeory quindi è necessario fare clic sul "
+"pulsante di aggiornamento allora tutte le categorie controllati saranno "
+"riflessi nel selezionare la categoria master."
+
+#: ../mim-posttype-taxonomy.php:180
+msgid ""
+"Cover image size is dynamic or static? If static, change it to get dynamic "
+"value from plugin settings.<br/>You must upload"
+msgstr ""
+"Dimensione immagine di copertina è dinamico o statico? Se statica, modificarlo "
+"per ottenere valore dinamico dalle impostazioni del plugin. <br/> È necessario "
+"caricare"
+
+#: ../mim-posttype-taxonomy.php:180
+msgid "size of image."
+msgstr "dimensione dell'immagine."
+
+#: ../mim-posttype-taxonomy.php:331
+msgid "Show All Issues"
+msgstr "Mostra tutte le questioni"
+
+#: ../mim-posttype-taxonomy.php:363
+msgid "Show All Magazine Category"
+msgstr "Mostra tutto Magazine Categoria"
+
+#: ../mim-posttype-taxonomy.php:436
+msgid "Name"
+msgstr "nome"
+
+#: ../mim-posttype-taxonomy.php:437
+msgid "Issue Menu"
+msgstr "Menu di emissione"
+
+#: ../mim-posttype-taxonomy.php:438
+msgid "Issue Date"
+msgstr "Data di Emissione"
+
+#: ../mim-posttype-taxonomy.php:439
+msgid "No of Issue"
+msgstr "No di Rilascio"
+
+#: ../mim-posttype-taxonomy.php:520
+msgid "Featured Image"
+msgstr "Foto di presentazione"
+
+#: ../index.php:104
+msgid "Default Issue"
+msgstr "predefinito Issue"
+
+#: ../index.php:107
+msgid "This is Default Issue."
+msgstr "Questo è un problema di default."
+
+#: ../index.php:108
+msgid "default-issue"
+msgstr "default-problema"
+
+#: ../index.php:115
+msgid "Default Magazine Category"
+msgstr "Magazine predefinito Categoria"
+
+#: ../index.php:118
+msgid "This is Default Magazine Category."
+msgstr "Questo è il Magazine Default Category."
+
+#: ../index.php:119
+msgid "default-magazine"
+msgstr "default-magazine"
+
+#: ../mim-issue-class.php:30 ../mim-issue-class.php:30
+msgid "MIM Issue Settings"
+msgstr "Impostazioni di Interesse MIM"
+
+#: ../mim-issue-class.php:31 ../mim-issue-class.php:31 ../mim-issue-class.php:68
+msgid "MIM Plugin Help"
+msgstr "MIM Plugin Aiuto"
+
+#: ../mim-issue-class.php:72
+msgid "User Guide (PDF)"
+msgstr "Guida utente (PDF)"
+
+#: ../mim-issue-class.php:73
+msgid "Download User Guide"
+msgstr "Scarica Guida per l'utente"
+
+#: ../mim-issue-class.php:74
+msgid "for Manage Issue Based Magazine Plugin"
+msgstr "per Gestire Issue base Magazine Plugin"
+
+#: ../mim-issue-class.php:75
+msgid "OR"
+msgstr "OR"
+
+#: ../mim-issue-class.php:76
+msgid "For more information visit website : "
+msgstr "Per maggiori informazioni visitare il sito:"
+
+#: ../mim-issue-class.php:102
+msgid "Sorry, your nonce did not verify."
+msgstr "Spiacenti, il tuo nonce non ha verificato."
+
+#: ../mim-issue-class.php:165
+msgid "Magazine Issue General Settings"
+msgstr "Magazine Issue Impostazioni generali"
+
+#: ../mim-issue-class.php:167
+msgid "Submitted Successfully"
+msgstr "presentata con successo"
+
+#: ../mim-issue-class.php:174
+msgid "General Settings"
+msgstr "Impostazioni generali"
+
+#: ../mim-issue-class.php:182
+msgid "Display full article on category page"
+msgstr "Visualizza articolo completo sulla categoria pagina"
+
+#: ../mim-issue-class.php:183
+msgid ""
+"<i><p style=\"font-weight: normal;\">(If this option is set to 'Yes', when single "
+"article is there in category and you want to display full article on category "
+"page)</p></i>"
+msgstr ""
+"<i> <p style=\"font-weight: normal;\"> (Se questa opzione è impostata su 'Sì', "
+"quando singolo articolo è lì in categoria e si desidera visualizzare l'articolo "
+"completo della categoria page) </ p > </ i>"
+
+#: ../mim-issue-class.php:197
+msgid "Allow users to post articles in past issue"
+msgstr "Consentire agli utenti di pubblicare articoli in questione passato"
+
+#: ../mim-issue-class.php:198
+msgid ""
+"<i><p style=\"font-weight: normal;\">(If this option is set to 'Yes', logged in "
+"user would be able to post articles in past issues)</p></i>"
+msgstr ""
+"<i> <p style=\"font-weight: normal;\"> (Se questa opzione è impostata su 'Sì', "
+"utente collegato sarebbe in grado di pubblicare articoli in edizioni "
+"precedenti) </ p> </ i>"
+
+#: ../mim-issue-class.php:213
+msgid "Default article status for editors"
+msgstr "Status dell'articolo predefinito per gli editori"
+
+#: ../mim-issue-class.php:214
+msgid ""
+"<i><p style=\"font-weight: normal;\">(Default article status when editors add new "
+"articles. This feature is useful for moderation of posted articles)</p></i>"
+msgstr ""
+"<i> <p style=\"font-weight: normal;\"> (status dell'articolo predefinito quando "
+"gli editori aggiungono nuovi articoli. Questa funzione è utile per la "
+"moderazione di articoli postati) </ p> </ i>"
+
+#: ../mim-issue-class.php:220 ../mim-issue-class.php:255
+msgid "Approved"
+msgstr "approvato"
+
+#: ../mim-issue-class.php:220
+msgid "Pending"
+msgstr "in attesa di"
+
+#: ../mim-issue-class.php:230
+msgid "Editors can register from website"
+msgstr "Editori possono registrarsi dal sito"
+
+#: ../mim-issue-class.php:231
+msgid ""
+"<i><p style=\"font-weight: normal;\">(If this option is set to 'Yes', link will "
+"be displayed on website to register)</p></i>"
+msgstr ""
+"<i> <p style=\"font-weight: normal;\"> (Se questa opzione è impostata su 'Sì', "
+"collegamento verrà visualizzato sul sito per registrarsi) </ p> </ i>"
+
+#: ../mim-issue-class.php:247
+msgid "New editor status"
+msgstr "Nuovo stato redattore"
+
+#: ../mim-issue-class.php:248
+msgid ""
+"<i><p style=\"font-weight: normal;\">(Default status for users when they get "
+"registered from website)</p></i>"
+msgstr ""
+"<i> <p style=\"font-weight: normal;\"> (stato di default per gli utenti quando "
+"vengono registrati dal sito) </ p> </ i>"
+
+#: ../mim-issue-class.php:255
+msgid "Non-Approved"
+msgstr "Non-Approvato"
+
+#: ../mim-issue-class.php:265
+msgid "Cover image dimensions"
+msgstr "Coprire dimensioni dell'immagine"
+
+#: ../mim-issue-class.php:266
+msgid ""
+"<i><p style=\"font-weight: normal;\">(Best size for your cover image. Thumbnail "
+"will be created with specified dimentions)</p></i>"
+msgstr ""
+"<i> <p style=\"font-weight: normal;\"> (miglior formato per la vostra immagine di "
+"copertina. Thumbnail verrà creato con dimentions specifici) </ p> </ i>"
+
+#: ../mim-issue-class.php:276
+msgid "Width  :"
+msgstr "larghezza :"
+
+#: ../mim-issue-class.php:276 ../mim-issue-class.php:277
+msgid "px"
+msgstr "px"
+
+#: ../mim-issue-class.php:277
+msgid "Height :"
+msgstr "altezza:"
+
+#: ../mim-issue-class.php:282
+msgid "Number of articles displayed per page"
+msgstr "Numero di articoli per pagina"
+
+#: ../mim-issue-class.php:283
+msgid ""
+"<i><p style=\"font-weight: normal;\">(Specified number of articles will be listed "
+"on each page on article listing page)</p></i>"
+msgstr ""
+"<i> <p style=\"font-weight: normal;\"> (numero specificato di articoli saranno "
+"elencati in ogni pagina in pagina dell'elenco articolo) </ p> </ i>"
+
+#: ../mim-issue-class.php:300
+msgid "Search behaviour (Within current issue or site wide)"
+msgstr "Comportamento di ricerca (Entro problema attuale o l'intero sito)"
+
+#: ../mim-issue-class.php:301
+msgid ""
+"<i><p style=\"font-weight: normal;\">(If set to 'Within current issue', search "
+"will be perfomed only on current selected issue. If set to 'Site wide', search "
+"will be perfomed on all issues)</p></i>"
+msgstr ""
+"<i><p style=\"font-weight: normal;\">(Se è impostato su 'Da numero corrente', "
+"ricerca verrà eseguita soltanto sul numero corrente selezionato. Se impostato "
+"su 'Site largo', ricerca verrà perfomed su tutte le questioni)</p></i>"
+
+#: ../mim-issue-class.php:306
+msgid "Yes"
+msgstr "sì"
+
+#: ../mim-issue-class.php:306
+msgid "Within current issue"
+msgstr "All'interno numero corrente"
+
+#: ../mim-issue-class.php:307
+msgid "No"
+msgstr "No"
+
+#: ../mim-issue-class.php:307
+msgid "Site wide"
+msgstr "sito ampia"
+
+#: ../mim-issue-class.php:347
+msgid "Current Issue"
+msgstr "Numero attuale"
+
+#: ../mim-issue-class.php:348
+msgid ""
+"<i><p style=\"font-weight: normal;\">(Issue set as default issue when website is "
+"loaded)</p></i>"
+msgstr ""
+"<i> <p style=\"font-weight: normal;\"> (Issue impostato come problema predefinita "
+"quando viene caricato il sito) </ p> </ i>"
+
+#: ../mim-issue-class.php:355
+msgid "Select Current Issue"
+msgstr "Selezionare Numero attuale"
+
+#: ../mim-issue-class.php:364
+msgid "Save Settings"
+msgstr "Salva impostazioni"
+
+#: ../mim-user-field.php:14
+msgid "User Status Updating"
+msgstr "Aggiornamento stato utente"
+
+#: ../mim-user-field.php:18
+msgid "User Status"
+msgstr "Stato utente"
+
+#: ../mim-user-field.php:98
+msgid "Status"
+msgstr "USTATUS"
+
+#: ../mim-user-field.php:149
+msgid "<strong>ERROR</strong>: Your account is still pending approval."
+msgstr "<strong> ERRORE </ strong>: Il tuo conto è ancora in attesa di approvazione."
+
+#: ../mim-user-field.php:176
+msgid "USERNAME (USEREMAIL) has requested a username at SITENAME"
+msgstr "USERNAME (USEREMAIL) ha richiesto un nome utente in NOMESITO"
+
+#: ../mim-user-field.php:178
+msgid "To approve or deny this user access to SITENAME go to"
+msgstr "Per approvare o negare l'utente l'accesso a NOMESITO andare a"
+
+#: ../mim-user-field.php:191
+msgid "[%s] User Approval"
+msgstr "[%s] Approvazione utente"
