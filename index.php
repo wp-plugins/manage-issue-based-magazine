@@ -24,26 +24,6 @@ define( 'MIM_PLUGIN_BASENAME', 		plugin_basename( __FILE__ ) );
 
 add_action( 'plugins_loaded','mim_issue_plugin_load_function' );
 
-/** Start Upgrade Notice **/
-global $pagenow;
-
-if ( 'plugins.php' === $pagenow ) {
-    // Better update message
-    $file   = basename( __FILE__ );
-    $folder = basename( dirname( __FILE__ ) );
-    $hook = "in_plugin_update_message-{$folder}/{$file}";
-    add_action( $hook, 'update_mim_notification_message', 20, 2 );
-}
-
-function update_mim_notification_message( $plugin_data, $r ) {
-    $data = file_get_contents( 'http://plugins.trac.wordpress.org/browser/manage-issue-based-magazin/trunk/readme.txt?format=txt' );
-	$upgradetext = stristr( $data, '== Upgrade Notice ==' );	
-	$upgradenotice = stristr( $upgradetext, '*' );	
-	$output = "<div style='color:#EEC2C1;font-weight: normal;background: #C92727;padding: 10px;border: 1px solid #eed3d7;border-radius: 4px;'><strong style='color:rgb(253, 230, 61)'>Update Notice : </strong> ".$upgradenotice."</div>";
-    return print $output;
-}
-/** End Upgrade Notice **/
-
 function mim_issue_plugin_load_function(){
 	require_once( 'mim-issue-class.php' );	
 	
