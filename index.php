@@ -152,6 +152,7 @@ function min_deactivate(){
 	delete_option('mim_issue_menu_category');
 	delete_option('page_for_magazines');
 	delete_option('page_for_archives');
+	delete_option('users_can_register');
 	
     //unset session for current issue if plugin is deactive
 	session_unset('Current_Issue');
@@ -183,6 +184,7 @@ function mim_uninstall(){
 	delete_option('mim_issue_menu_category');
 	delete_option('page_for_magazines');
 	delete_option('page_for_archives');
+	delete_option('users_can_register');
 	
     //unset session for current issue if plugin is uninstall
 	session_unset('Current_Issue');
