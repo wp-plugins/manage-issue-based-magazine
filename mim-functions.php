@@ -6,21 +6,28 @@
  * @return string new content.
  **/
 if ( !function_exists( 'mim_issue_content_filter' ) ) {
-	wp_enqueue_style( 'issue-form-edit', MIM_PLUGIN_URL . 'css/issue-edit.css' ); 
+	
 	function mim_issue_content_filter( $content ) {
 		global $post;
 		
 		$page_for_magazines_id=get_option('page_for_magazines');
 		$page_for_archives_id=get_option('page_for_archives');
-		
-		if ( $post->ID == $page_for_magazines_id && empty( $content ) ) {
+		$post_type = get_post_type_object(get_post_type());
+		if ( ($post_type->name == 'magazine') && ( $post->ID == $page_for_magazines_id ) && empty( $content ) ) {
 			include('includes/magazine-listing-template.php');
-		} else if( $post->ID == $page_for_archives_id && empty( $content ) ) {			
+		} else if( ($post_type->name == 'magazine') && ( $post->ID == $page_for_archives_id ) && empty( $content ) ) {			
 			include('includes/issue-listing-template.php');		
 		} 
 		
 		return $content;		
 	}
 	add_filter( 'the_content', 'mim_issue_content_filter',5);		
+}
+
+add_action( 'admin_enqueue_scripts','enqueue_mim_admin_styles_scripts' );
+
+function enqueue_mim_admin_styles_scripts() {
+	
+	wp_enqueue_style( 'issue-form-edit', MIM_PLUGIN_URL . 'css/issue-edit.css' ); 
 }
 ?>

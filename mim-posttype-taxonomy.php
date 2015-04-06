@@ -2,10 +2,10 @@
 	/**
 		* css and js loaded.
 		*
-		* @created by {Nilesh Mokani} and {12-12-2013}
+		* 
 		*
 	**/
-	if($_REQUEST['taxonomy']== 'issues')
+	if( isset($_REQUEST['taxonomy']) && $_REQUEST['taxonomy']== 'issues')
 	{
 		function mim_issues_load_custom_wp_admin_style() {	
 			wp_enqueue_script( 'thickbox' );
@@ -22,7 +22,7 @@
 		*
 		* Function Name: mim_issues_taxonomy_add_form_fields.
 		*
-		* @created by {Nilesh Mokani} and {12-12-2013}
+		* 
 		*
 	**/	
 	if ( !function_exists( 'mim_issues_taxonomy_add_form_fields' ) )  {
@@ -86,7 +86,7 @@
 		*
 		* Function Name: mim_issues_taxonomy_edit_form_fields.
 		*
-		* @created by {Nilesh Mokani} and {12-12-2013}
+		* 
 		*
 	**/
 	
@@ -204,7 +204,7 @@
 		*
 		* Function Name: mim_save_issue_taxonomy_custom_meta.
 		*
-		* @created by {Nilesh Mokani} and {12-12-2013}
+		* 
 		*
 	**/
 	if ( !function_exists( 'mim_save_issue_taxonomy_custom_meta' ) )  {
@@ -249,7 +249,7 @@
 		*
 		* Function Name: mim_issue_remove_parent_category.
 		*
-		* @created by {Nilesh Mokani} and {12-12-2013}
+		* 
 		*
 	**/	
 	if ( !function_exists( 'mim_issue_remove_parent_category' ) ) {
@@ -276,7 +276,7 @@
 		*
 		* Function Name: mim_issue_filter_list.
 		*
-		* @created by {Nilesh Mokani} and {28-12-2013}
+		* 
 		*
 	**/
 	 if ( !function_exists( 'mim_issue_filter_list' ) )  { 	
@@ -304,7 +304,7 @@
 		*
 		* Function Name: mim_magazine_filter_list.
 		*
-		* @created by {Nilesh Mokani} and {28-12-2013}
+		* 
 		*
 	**/
 	if ( !function_exists( 'mim_magazine_filter_list' ) )  {
@@ -332,17 +332,20 @@
 		*
 		* Function Name: mim_issue_perform_filtering.
 		*
-		* @created by {Nilesh Mokani} and {28-12-2013}
+		* 
 		*
 	**/
 	if ( !function_exists( 'mim_issue_perform_filtering' ) )  {		
 		add_filter( 'parse_query','mim_issue_perform_filtering' );
 		function mim_issue_perform_filtering( $query ) {
 			$qv = &$query->query_vars;
-			if ( ( $qv['issues'] ) && is_numeric( $qv['issues'] ) ) {
+			if( !empty ( $qv ) )
+			{
+				if ( !empty ( $qv['issues'] ) && is_numeric( $qv['issues'] ) ) {
 				$term = get_term_by( 'id', $qv['issues'], 'issues' );
 				$qv['issues'] = $term->slug;
-			}
+			  }
+			}  
 		}
 	 }
   
@@ -351,17 +354,20 @@
 		*
 		* Function Name: mim_magazine_category_perform_filtering.
 		*
-		* @created by {Nilesh Mokani} and {28-12-2013}
+		* 
 		*
 	**/
 	if ( !function_exists( 'mim_magazine_category_perform_filtering' ) )  {
 		add_filter( 'parse_query','mim_magazine_category_perform_filtering' );	
 		function mim_magazine_category_perform_filtering( $query ) {
-			$qv = &$query->query_vars;		
-			if ( ( $qv['magazine_category'] ) && is_numeric( $qv['magazine_category'] ) ) {
-				$term = get_term_by( 'id', $qv['magazine_category'], 'magazine_category' );
-				$qv['magazine_category'] = $term->slug;
-			}
+			$qv = &$query->query_vars;	
+			if( !empty ( $qv ) )
+			{	
+				if ( !empty ( $qv['magazine_category'] ) && is_numeric( $qv['magazine_category'] ) ) {
+					$term = get_term_by( 'id', $qv['magazine_category'], 'magazine_category' );
+					$qv['magazine_category'] = $term->slug;
+				}
+			}	
 		}
 	}
 
@@ -370,7 +376,7 @@
 		*
 		* Function Name: mim_issue_custom_columns.
 		*
-		* @created by {Nilesh Mokani} and {28-12-2013}
+		* 
 		*
 	**/
 	if ( !function_exists( 'mim_issue_custom_columns' ) )  {
@@ -393,7 +399,7 @@
 		*
 		* Function Name: mim_issue_manage_columns.
 		*
-		* @created by {Nilesh Mokani} and {28-12-2013}
+		* 
 		*
 	**/
 	
@@ -406,6 +412,7 @@
 					$mim_coverimage_path=wp_get_attachment_image_src($mim_coverimage,'thumbnail'); 
 					if(empty($mim_coverimage))
 						$imgurl=MIM_PLUGIN_URL . '/images/default.jpg';
+						
 					else
 						$imgurl=$mim_coverimage_path[0];
 					$out .='<img src="'.esc_url($imgurl).'" />';			
@@ -444,7 +451,7 @@
 		*
 		* Function Name: mim_add_new_magazine_columns.
 		*
-		* @created by {Nilesh Mokani} and {28-12-2013}
+		* 
 		*
 	**/
 	if ( !function_exists( 'mim_add_new_magazine_columns' ) )  {	
@@ -463,7 +470,7 @@
 		*
 		* Function Name: mim_manage_magazine_columns.
 		*
-		* @created by {Nilesh Mokani} and {28-12-2013}
+		* 
 		*
 	**/	
 	if ( !function_exists( 'mim_manage_magazine_columns' ) )  {
@@ -485,7 +492,7 @@
 		*
 		* Function Name: mim_delete_issue_taxonomy_custom_meta.
 		*
-		* @created by {Nilesh Mokani} and {28-12-2013}
+		* 
 		*
 	**/
 	
@@ -505,7 +512,7 @@
 		*
 		* Function Name: mim_delete_magazine_category_taxonomy_custom_meta.
 		*
-		* @created by {Nilesh Mokani} and {28-12-2013}
+		* 
 		*
 	**/
 	

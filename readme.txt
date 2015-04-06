@@ -2,7 +2,7 @@
 Contributors: PurpleMAD
 Tags: Magazine Issue Manage, Magazine, Issue Manager, Issue, Issues, Magazine Issue, Manage Issue Based Magazine
 Requires at least: 3.8.1
-Tested up to: 4.1
+Tested up to: 4.1.1
 Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -63,7 +63,9 @@ For making issue categories, current issue and magazine categories more handy, F
   * MIM Current Issue Widget: Displays current issue title and image if current issue is selected in MIM issue settings.
   * MIM Current Issue Category Widget: Displays list of issue categories for current issue.
   * MIM Issue Article Listing Widget: Displays list of articles for current issue.
-  * MIM Issue Listing Widget: Displays list of all Issues.
+  * MIM Issue Listing Widget: Displays list of published issues. When clicked on issue link, all the articles of the selected issues will be displayed.
+  * MIM Issue Browse Widget: Displays list of published issues. When clicked on issue link, user will be redirected to home page with content of selected issue.
+  * MIM Issue Feature Post Widget: Displays the most featured posts on your site. Provide the number of posts to be displayed. If empty, it displays all the featured post of current issue.
 
 
 = Coming Soon - Features in next upgrade =
@@ -131,7 +133,10 @@ Plugin Developed by PurpleMAD [Visit website](http://www.purplemad.ca)
 * Resolved upload issue in taxonomy.
 
 = 1.3 =
-* Add drag and drop widgets and more updates in the plugin.
+* Added drag and drop widgets and more updates in the plugin.
+
+= 1.4 =
+* Added MIM Issue Browse Widget and MIM Issue Feature Post Widget and resolved some bugs and improvements in the plugin.
 
 == Upgrade Notice ==
 Click here for [Plugin Demo](http://mim.purplemadprojects.com/) 

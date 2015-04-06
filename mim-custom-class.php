@@ -8,13 +8,18 @@ if ( ! class_exists( 'MIM_Custom' ) ) {
 		*
 		* Function Name: __construct.
 		*
-		* @created by {Nilesh Mokani} and {05-12-2013}
+		* 
 		*
 		**/
 		function __construct(){
 	
 			 add_action( 'init', array( $this, 'mim_load_post_type_taxonomy' ) );
-			  
+		  
+            // Adds meta box
+            add_action( 'add_meta_boxes', array( &$this, 'issue_init_add_metaboxes' ) );
+            
+            //Save meta-box value
+            add_action('save_post', array( &$this, 'save_issue_details' )); 
 		}
 	 
 		/**
@@ -22,7 +27,7 @@ if ( ! class_exists( 'MIM_Custom' ) ) {
 		*
 		* Function Name: mim_load_post_type_taxonomy.
 		*
-		* @created by {Nilesh Mokani} and {12-12-2013}
+		* 
 		*
 		**/
 			
@@ -62,7 +67,7 @@ if ( ! class_exists( 'MIM_Custom' ) ) {
 							    'has_archive'        => true,
 							    'hierarchical'       => false,
 							    'menu_position'      => 6,								
-							    'supports'           => array( 'title', 'author', 'editor', 'custom-fields', 'revisions', 'thumbnail', 'excerpt',															 'trackbacks', 'comments', 'page-attributes', 'post-formats' ),
+							    'supports'           => array( 'title', 'author', 'editor', 'custom-fields', 'revisions', 'thumbnail', 'excerpt','trackbacks', 'comments', 'page-attributes', 'post-formats' ),
 								'menu_icon'			 => MIM_PLUGIN_URL . 'images/issuem-16x16.png'
 							  );
 
@@ -143,5 +148,40 @@ if ( ! class_exists( 'MIM_Custom' ) ) {
 		  
 
 	  }
+	  
+	  	/* Adding metabox for feature post */
+	  
+	  	function issue_init_add_metaboxes()  {
+      	
+      		add_meta_box("featurepost_meta", "Featured Post", array( &$this, 'add_issue_feature_metaboxes' ), "magazine", "side", "low");
+           
+       	}
+        
+        
+        function add_issue_feature_metaboxes() {
+        	global $post;
+        	 
+        	$prfx_stored_meta = get_post_meta( $post->ID );  ?>
+        	
+				<label for="featured-checkbox">
+		            <input type="checkbox" name="featured-checkbox" id="featured-checkbox" value="yes" <?php if ( isset ( $prfx_stored_meta['featured-checkbox'] ) ) checked( $prfx_stored_meta['featured-checkbox'][0], 'yes' ); ?> />
+		            <?php _e( 'Featured Post', 'mim-issue' )?>
+		        </label>
+     
+		<?php }  
+		
+		/* Function to save meta box value */
+		
+		function save_issue_details($post_id) {      
+		
+			global $post;
+			
+			if( isset( $_POST[ 'featured-checkbox' ] ) ) {
+    			update_post_meta( $post_id, 'featured-checkbox', 'yes' );
+     		}
+     		else {
+    			update_post_meta( $post_id, 'featured-checkbox', 'no' );
+     		}
+		}
 	}
 }

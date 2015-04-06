@@ -4,7 +4,7 @@
 *
 * Function Name: mim_get_current_issue.
 *
-* @created by {Nilesh Mokani} and {12-12-2013}
+* 
 *
 **/
 /* S: Short code for current issue -- USE <?php echo do_shortcode('[MIM_Current_Issue]'); ?>*/
@@ -22,7 +22,7 @@ function mim_get_current_issue($atts,$content="")
 *
 * Function Name: mim_get_current_issue_menu.
 *
-* @created by {Nilesh Mokani} and {12-12-2013}
+* 
 *
 **/
 /* S: Short code for return magazine catgeory ids base on issue for menu -- USE <?php echo do_shortcode('[MIM_Issue_Menu]'); ?> */
@@ -56,7 +56,7 @@ function mim_get_current_issue_menu( $atts ) {
 *
 * Function Name: mim_get_current_master_issue.
 *
-* @created by {Nilesh Mokani} and {12-12-2013}
+* 
 *
 **/
 /*  S: Short code for return master issue ids -- USE <?php echo do_shortcode('[MIM_Master_Issue]'); ?> */
@@ -84,7 +84,7 @@ function mim_get_current_master_issue( $atts ) {
 *
 * Function Name: mim_issue_menu_with_design_h.
 *
-* @created by {Nilesh Mokani} and {12-12-2013}
+* 
 *
 **/
 /* S: Shortcode for Menu for Issue with simple design with horizontal--- USE <?php echo do_shortcode('[MIM_Issue_Menu_With_Horizontal issue_id=""]'); ?> */
@@ -126,7 +126,7 @@ add_shortcode( 'MIM_Issue_Menu_With_Horizontal', 'mim_issue_menu_with_design_h' 
 *
 * Function Name: mim_issue_menu_with_design_v.
 *
-* @created by {Nilesh Mokani} and {12-12-2013}
+* 
 *
 **/
 /* S: Shortcode for Menu for Issue with simple design with vertical  --- USE <?php echo do_shortcode('[MIM_Issue_Menu_With_Vertical issue_id=""]'); ?> */
@@ -167,7 +167,7 @@ add_shortcode( 'MIM_Issue_Menu_With_Vertical', 'mim_issue_menu_with_design_v' );
 *
 * Function Name: mim_all_issue_call_with_simple_design.
 *
-* @created by {Nilesh Mokani} and {12-12-2013}
+* 
 *
 **/
 /* S: Shortcode for All Issue with simple design --- USE <?php echo do_shortcode('[MIM_All_Issues_Simple]'); ?> */
@@ -210,7 +210,7 @@ add_shortcode( 'MIM_All_Issues_Simple', 'mim_all_issue_call_with_simple_design' 
 *
 * Function Name: mim_list_all_issue_id_call.
 *
-* @created by {Nilesh Mokani} and {12-12-2013}
+* 
 *
 **/
 /* S: Shortcode for all issue with return ids --- USE <?php echo do_shortcode('[MIM_All_Issues]'); ?> */
@@ -258,7 +258,7 @@ add_shortcode( 'MIM_All_Issues', 'mim_list_all_issue_id_call' );
 *
 * Function Name: mim_magazine_articles_ids_with_issue_magazine.
 *
-* @created by {Nilesh Mokani} and {12-12-2013}
+* 
 *
 **/
 /* S: Shortcode for return  magazine article ids base on select issue and magazine category  --- USE <?php echo do_shortcode('[MIM_Magazine_Artices_Ids issue_id="" category_id=""]'); ?> */
@@ -309,7 +309,7 @@ add_shortcode( 'MIM_Magazine_Artices_Ids', 'mim_magazine_articles_ids_with_issue
 *
 * Function Name: mim_magazine_article_list.
 *
-* @created by {Nilesh Mokani} and {12-12-2013}
+* 
 *
 **/
 /* S: Shortcode for magazine article base on select issue and magazine category --- USE <?php echo do_shortcode('[MIM_Magazine_Article issue_id="" category_id="" no_of_posts=""]'); ?> */

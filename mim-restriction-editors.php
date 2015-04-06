@@ -1,10 +1,12 @@
 <?php
 /**
 * Editor role restriction. 
-* @created by {Nilesh Mokani} and {19-12-2013}
+* 
 *
 **/
-if($current_user->roles[0] == 'editor')
+if( !empty ( $current_user->roles ) ){
+
+if( $current_user->roles[0] == 'editor')
 {
 		global $wp_roles;
 		
@@ -16,7 +18,7 @@ if($current_user->roles[0] == 'editor')
 		
 		$mim_editor_status=get_option('mim_default_post_article_status');
 		$status= !empty($mim_editor_status) ? $mim_editor_status : 'draft';
-		if($_REQUEST['post_type'] == 'magazine')
+		if(isset($_REQUEST['post_type']) && $_REQUEST['post_type'] == 'magazine')
 		{
 			if($status == 'draft'){
 				$wp_roles->remove_cap( 'editor', 'publish_posts' );
@@ -43,7 +45,7 @@ if($current_user->roles[0] == 'editor')
 		*
 		* Function Name: mim_remove_issue_box.
 		*
-		* @created by {Nilesh Mokani} and {22-12-2013}
+		* 
 		*
 	  **/
 	
@@ -54,12 +56,12 @@ if($current_user->roles[0] == 'editor')
 			add_meta_box( 'issuesdiv' ,'Issues','mim_issue_categories_meta_box', 'magazine' , 'side' ); 
 		}
 		
-			/**
+		/**
 		* Added issue metabox.
 		*
 		* Function Name: mim_add_issue_box.
 		*
-		* @created by {Nilesh Mokani} and {22-12-2013}
+		* 
 		*
 	  **/
 		
@@ -73,7 +75,7 @@ if($current_user->roles[0] == 'editor')
 		*
 		* Function Name: mim_issue_categories_meta_box.
 		*
-		* @created by {Nilesh Mokani} and {22-12-2013}
+		* 
 		*
 	  **/
 	  if(!function_exists('mim_issue_categories_meta_box'))
@@ -184,7 +186,7 @@ if($current_user->roles[0] == 'editor')
 		*
 		* Function Name: mim_add_to_bulk_quick_edit_custom_box.
 		*
-		* @created by {Nilesh Mokani} and {22-12-2013}
+		* 
 		*
 	  **/
 	  
@@ -236,5 +238,6 @@ if($current_user->roles[0] == 'editor')
 		  	 }
 		  }
 		 }
+ }
 }
 ?>

@@ -3,7 +3,7 @@
 Plugin Name: Magazine Issue Manager
 Plugin URI: http://mim.purplemadprojects.com/
 Description: To manage issue based online publication content. Using this plugin site owner can publish cotent in issues using either WordPress categorized article features or in form of PDFs. Site owner can plan content in terms of periodic issues and users can browse content by selecting issues on website.
-Version: 1.3
+Version: 1.4
 Text Domain: mim-issue
 Author: PurpleMAD
 Author URI: http://www.purplemad.ca/
@@ -12,18 +12,38 @@ Author URI: http://www.purplemad.ca/
 define( 'MIM_PLUGIN_URL', 			plugin_dir_url( __FILE__ ) );
 define( 'MIM_PLUGIN_PATH',			plugin_dir_path( __FILE__ ) );
 define( 'MIM_PLUGIN_BASENAME', 		plugin_basename( __FILE__ ) );
-define( 'MIM_PLUGIN_REL_DIR', 		dirname( PLUGIN_BASENAME ) );
 
 /**
 * When plugin loaded then all files called.
 *
 * Function Name: mim_issue_plugin_load_function.
 *
-* @created by {Nilesh Mokani} and {01-12-2013}
+* 
 *
 **/
 
 add_action( 'plugins_loaded','mim_issue_plugin_load_function' );
+
+/** Start Upgrade Notice **/
+global $pagenow;
+
+if ( 'plugins.php' === $pagenow ) {
+    // Better update message
+    $file   = basename( __FILE__ );
+    $folder = basename( dirname( __FILE__ ) );
+    $hook = "in_plugin_update_message-{$folder}/{$file}";
+    add_action( $hook, 'update_mim_notification_message', 20, 2 );
+}
+
+function update_mim_notification_message( $plugin_data, $r ) {
+    $data = file_get_contents( 'http://plugins.trac.wordpress.org/browser/manage-issue-based-magazin/trunk/readme.txt?format=txt' );
+	$upgradetext = stristr( $data, '== Upgrade Notice ==' );	
+	$upgradenotice = stristr( $upgradetext, '*' );	
+	$output = "<div style='color:#EEC2C1;font-weight: normal;background: #C92727;padding: 10px;border: 1px solid #eed3d7;border-radius: 4px;'><strong style='color:rgb(253, 230, 61)'>Update Notice : </strong> ".$upgradenotice."</div>";
+    return print $output;
+}
+/** End Upgrade Notice **/
+
 function mim_issue_plugin_load_function(){
 	require_once( 'mim-issue-class.php' );	
 	
@@ -34,10 +54,13 @@ function mim_issue_plugin_load_function(){
 				
 		require_once( 'mim-posttype-taxonomy.php' );
 		$current_user = wp_get_current_user();
-		if($current_user->roles[0] != 'editor')
+		if( !empty ( $current_user->roles ) )
 		{
-			require_once( 'mim-user-field.php' );
-		}
+			if($current_user->roles[0] != 'editor')
+			{
+				require_once( 'mim-user-field.php' );
+			}
+		}	
 		require_once('mim-restriction-editors.php');
 		require_once('mim-shortcode.php');
 		require_once('mim-widgets.php');
@@ -59,7 +82,7 @@ register_uninstall_hook( __FILE__, 'mim_uninstall'  );
 *
 * Function Name: min_activate
 *
-* @created by {Nilesh Mokani} and {01-12-2013}
+* 
 *
 **/
 
@@ -132,7 +155,7 @@ function min_activate(){
 *
 * Function Name: min_deactivate
 *
-* @created by {Nilesh Mokani} and {01-12-2013}
+* 
 *
 **/
 	 
@@ -149,6 +172,9 @@ function min_deactivate(){
 	delete_option('mim_issue_menu_category');
 	delete_option('page_for_magazines');
 	delete_option('page_for_archives');
+	
+    //unset session for current issue if plugin is deactive
+	session_unset('Current_Issue');
 }
 	
 /**
@@ -156,7 +182,7 @@ function min_deactivate(){
 *
 * Function Name: uninstall
 *
-* @created by {Nilesh Mokani} and {01-12-2013}
+* 
 *
 **/
 		
@@ -177,6 +203,9 @@ function mim_uninstall(){
 	delete_option('mim_issue_menu_category');
 	delete_option('page_for_magazines');
 	delete_option('page_for_archives');
+	
+    //unset session for current issue if plugin is uninstall
+	session_unset('Current_Issue');
 }
 
 /**
@@ -184,7 +213,7 @@ function mim_uninstall(){
 *
 * Function Name: wpdbfix
 *
-* @created by {Nilesh Mokani} and {01-12-2013}
+* 
 *
 **/
 

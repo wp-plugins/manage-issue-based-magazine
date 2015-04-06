@@ -4,7 +4,7 @@
 *
 * Function Name: mim_custom_user_profile_fields.
 *
-* @created by {Nilesh Mokani} and {12-12-2013}
+* 
 *
 **/
 function mim_custom_user_profile_fields( $user ) {
@@ -38,7 +38,7 @@ function mim_custom_user_profile_fields( $user ) {
 *
 * Function Name: mim_save_custom_user_profile_fields.
 *
-* @created by {Nilesh Mokani} and {12-12-2013}
+* 
 *
 **/
 function mim_save_custom_user_profile_fields( $user_id ) {
@@ -60,7 +60,7 @@ add_action( 'edit_user_profile_update', 'mim_save_custom_user_profile_fields' );
 *
 * Function Name: add_user_status.
 *
-* @created by {Nilesh Mokani} and {12-12-2013}
+* 
 *
 **/
 
@@ -90,7 +90,7 @@ add_filter( 'manage_users_custom_column',  'mim_status_column', 10, 3 );
 *
 * Function Name: mim_add_column.
 *
-* @created by {Nilesh Mokani} and {12-12-2013}
+* 
 *
 **/
 
@@ -109,7 +109,7 @@ function mim_add_column( $columns ) {
 *
 * Function Name: mim_status_column.
 *
-* @created by {Nilesh Mokani} and {12-12-2013}
+* 
 *
 **/
 function mim_status_column( $val, $column_name, $user_id ) {
@@ -129,7 +129,7 @@ function mim_status_column( $val, $column_name, $user_id ) {
 *
 * Function Name: mim_authenticate_user.
 *
-* @created by {Nilesh Mokani} and {12-12-2013}
+* 
 *
 **/
 
@@ -162,7 +162,7 @@ function mim_authenticate_user( $userdata ) {
 *
 * Function Name: mim_request_admin_approval_email.
 *
-* @created by {Nilesh Mokani} and {12-12-2013}
+* 
 *
 **/
 

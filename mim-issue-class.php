@@ -10,7 +10,7 @@ if ( ! class_exists( 'MIM_Issue' ) ) {
 		*
 		* Function Name: __construct.
 		*
-		* @created by {Nilesh Mokani} and {05-12-2013}
+		* 
 		*
 		**/
 		function __construct(){
@@ -23,7 +23,7 @@ if ( ! class_exists( 'MIM_Issue' ) ) {
 		*
 		* Function Name: mim_issue_setting_admin_menu.
 		*
-		* @created by {Nilesh Mokani} and {05-12-2013}
+		* 
 		*
 		**/
 		
@@ -38,7 +38,7 @@ if ( ! class_exists( 'MIM_Issue' ) ) {
 		*
 		* Function Name: mim_init.
 		*
-		* @created by {Nilesh Mokani} and {05-12-2013}
+		* 
 		*
 		**/
 		
@@ -55,7 +55,7 @@ if ( ! class_exists( 'MIM_Issue' ) ) {
 		*
 		* Function Name: mim_issue_help_page.
 		*
-		* @created by {Harsh Mehta} and {26-02-2014}
+		* 
 		*
 		**/
 		
@@ -89,7 +89,7 @@ if ( ! class_exists( 'MIM_Issue' ) ) {
 		*
 		* Function Name: mim_issue_settings_page.
 		*
-		* @created by {Nilesh Mokani} and {05-12-2013}
+		* 
 		*
 		**/
 		
@@ -315,16 +315,9 @@ if ( ! class_exists( 'MIM_Issue' ) ) {
 												<?php _e( '<i><p style="font-weight: normal;">(Specified number of articles will be listed on each page on article listing page)</p></i>', 'mim-issue' ); ?>
 													
 												</th>
-				                                <td>
-													<select name="mim_post_per_page_article">
-													<?php
-														$mim_post_per_page_article_val=get_option('mim_post_per_page_article');	
-														$mim_post_per_page=array('5'=>'5','10'=>'10','15'=>'15','20'=>'20','25'=>'25');			
-														foreach($mim_post_per_page as $mim_k=>$mim_v){?>
-																<option value="<?php _e($mim_k,'mim-issue');?>" <?php selected( $mim_post_per_page_article_val,$mim_k ,$echo = true);?>><?php _e($mim_v,'mim-issue');?></option>										
-														<?php }
-													?>
-												</select>
+												<td>
+												<?php $mim_post_per_page_article_val=get_option('mim_post_per_page_article');?>
+												 <input type="number" name="mim_post_per_page_article" step="1" min="5" id="mim_post_per_page_article" value="<?php echo $mim_post_per_page_article_val;?>" class="small-text"><?php _e('Articles','mim-issue'); ?>	
 												</td>
 				                            </tr>
 											
