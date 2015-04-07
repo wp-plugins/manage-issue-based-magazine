@@ -256,4 +256,20 @@ function primary_menu_items( $args ) {
 	return $args;
 }
 
+if ( ! function_exists( 'mim_plugin_rate_us' ) ) : 
+function mim_plugin_rate_us( $footer_text ) {
+	global $typenow;
+
+	if ( $typenow == 'magazine' ) {
+		$rate_text = sprintf( __( 'Thank you for using Manage Issue Based Magazine (Multi-language) ! Please <a href="%1$s" target="_blank">rate us</a> on <a href="%1$s" target="_blank">WordPress.org</a> and <a href="%2$s" target="_blank">Like us</a> on <a href="%2$s" target="_blank">Facebook</a> to stay with us.', 'mim-issue' ),
+			'https://wordpress.org/support/view/plugin-reviews/manage-issue-based-magazine',
+			'https://www.facebook.com/PurpleMADcanada'
+		);
+
+		return str_replace( '</span>', '', $footer_text ) . ' | ' . $rate_text . '</span>';
+	} else {
+		return $footer_text;
+	}
+}
+endif; // mim_plugin_rate_us
 ?>
