@@ -3,7 +3,7 @@ Contributors: PurpleMAD
 Tags: Magazine Issue Manage, Magazine, Issue Manager, Issue, Issues, Magazine Issue, Manage Issue Based Magazine
 Requires at least: 3.8.1
 Tested up to: 4.1.1
-Stable tag: 1.4
+Stable tag: 1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -137,6 +137,9 @@ Plugin Developed by PurpleMAD [Visit website](http://www.purplemad.ca)
 
 = 1.4 =
 * Added MIM Issue Browse Widget and MIM Issue Feature Post Widget and resolved some bugs and improvements in the plugin.
+
+= 1.5 =
+* Fixed Some Bugs in the plugin.
 
 == Upgrade Notice ==
 Click here for [Plugin Demo](http://mim.purplemadprojects.com/) 
