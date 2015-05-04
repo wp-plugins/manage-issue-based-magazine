@@ -12,10 +12,9 @@ if ( !function_exists( 'mim_issue_content_filter' ) ) {
 		
 		$page_for_magazines_id=get_option('page_for_magazines');
 		$page_for_archives_id=get_option('page_for_archives');
-		$post_type = get_post_type_object(get_post_type());
-		if ( ($post_type->name == 'magazine') && ( $post->ID == $page_for_magazines_id ) && empty( $content ) ) {
+		if ( ( $post->ID == $page_for_magazines_id ) && empty( $content ) ) {
 			include('includes/magazine-listing-template.php');
-		} else if( ($post_type->name == 'magazine') && ( $post->ID == $page_for_archives_id ) && empty( $content ) ) {			
+		} else if( ( $post->ID == $page_for_archives_id ) && empty( $content ) ) {			
 			include('includes/issue-listing-template.php');		
 		} 
 		
