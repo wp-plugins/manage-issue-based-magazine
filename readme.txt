@@ -18,7 +18,7 @@ Transform your website from a boring blog into a mesmerizing magazine in your la
 >
 > [Click here](vimeo.com/issuemagazineplus) to learn more about how to setup issue based magazine using this plugin.
 >
-> [Click at](info@purplemad.ca) to submit your website to display on our portfolio page.
+> [Click at](mailto:info@purplemad.ca) to submit your website to display on our portfolio page.
  
 It is all about presentation. When you create awesome content, get more out of it by presenting it in a more professional format. 
 
