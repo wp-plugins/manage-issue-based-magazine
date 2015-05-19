@@ -2,7 +2,7 @@
 Contributors: PurpleMAD
 Tags: Magazine Issue Manage, Magazine, Issue Manager, Issue, Issues, Magazine Issue, Manage Issue Based Magazine
 Requires at least: 3.8.1
-Tested up to: 4.2.1
+Tested up to: 4.2.2
 Stable tag: 1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -16,7 +16,9 @@ Transform your website from a boring blog into a mesmerizing magazine in your la
 >
 > And If you are looking for custom theme to publish issue based magazine, feel free to contact us for theme development at info@purplemad.ca.
 >
-> [Click here](https://vimeo.com/125243563) to learn more about how to setup issue based magazine using this plugin.
+> [Click here](vimeo.com/issuemagazineplus) to learn more about how to setup issue based magazine using this plugin.
+>
+> [Click here](info@purplemad.ca) to learn more about how to setup issue based magazine using this plugin.
  
 It is all about presentation. When you create awesome content, get more out of it by presenting it in a more professional format. 
 
