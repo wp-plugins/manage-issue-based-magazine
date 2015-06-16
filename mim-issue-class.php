@@ -302,10 +302,10 @@ if ( ! class_exists( 'MIM_Issue' ) ) {
 													<?php
 														$mim_check_width=get_option('mim_cover_width');
 														$mim_check_height=get_option('mim_cover_height');
-														$mim_cover_width=!empty($mim_check_width) ? $mim_check_width : '300';
-														$mim_cover_height=!empty($mim_check_height) ? $mim_check_height : '300';
+														$mim_cover_width=!empty($mim_check_width) ? $mim_check_width : '1366';
+														$mim_cover_height=!empty($mim_check_height) ? $mim_check_height : '375';
 													?>
-													<?php _e('Width  :','mim-issue');?> <input type="text" maxlength="3" id="mim_cover_width" name="mim_cover_width" value="<?php _e($mim_cover_width,'mim-issue');?>"/><?php _e('px','mim-issue');?><br/>
+													<?php _e('Width  :','mim-issue');?> <input type="text" maxlength="4" id="mim_cover_width" name="mim_cover_width" value="<?php _e($mim_cover_width,'mim-issue');?>"/><?php _e('px','mim-issue');?><br/>
 													<?php _e('Height :','mim-issue');?> <input type="text" maxlength="3" id="mim_cover_height" name="mim_cover_height" value="<?php  _e($mim_cover_height,'mim-issue');?>"/><?php _e('px','mim-issue');?>
 												</td>
 				                            </tr>

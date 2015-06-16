@@ -95,8 +95,8 @@ function min_activate(){
 		update_option('default_role','editor');
 		update_option('posts_per_page','5');
 		add_option('mim_new_editor_status','Yes','', 'yes');
-		add_option('mim_cover_width','850','', 'yes');
-		add_option('mim_cover_height','450','', 'yes');
+		add_option('mim_cover_width','1366','', 'yes');
+		add_option('mim_cover_height','375','', 'yes');
 		add_option('mim_post_per_page_article','5','', 'yes');
 		add_option('mim_search_behaviour','Yes','', 'yes');		
 		add_option('mim_current_issue','-1','', 'yes');	

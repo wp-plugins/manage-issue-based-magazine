@@ -18,6 +18,120 @@
 	}
 	
 	/**
+		* Added custom field in magzine category taxonomy.
+		*
+		* Function Name: mim_magazine_category_add_form_fields.
+		*
+		* 
+		*
+	**/	
+
+	if ( !function_exists( 'mim_magazine_category_add_form_fields' ) )  {
+		function mim_magazine_category_add_form_fields() {		 
+			wp_enqueue_media();
+			wp_enqueue_script( 'cat-upload-image', MIM_PLUGIN_URL . 'js/cat-media-upload.js' );	
+			wp_enqueue_style( 'issue-form', MIM_PLUGIN_URL . 'css/issue.css' );
+			?>
+			<div class="form-field">
+				<?php $width=get_option('mim_cover_width');
+				$height=get_option('mim_cover_height'); ?>
+				<label for="mim_cover_image"><?php _e( 'Cover Image','mim-issue' ); ?></label>
+				<div id="mim_magazine_cover_img_show" class="cover_img">
+					<img src="" name="mim_display_cover_image_magazine" id="mim_display_cover_image_magazine"/>
+				</div>
+				<input id="mim_upload_image_magazine" type="hidden" size="36" name="mim_upload_image_magazine" value="" />
+				<input id="mim_upload_image_button_magazine" type="button" value="<?php _e('Upload','mim-issue');?>" class="mim_image_magazine button button-primary"/>
+				<input id="remove_magazine_image" type="button" value="<?php _e('Remove Image','mim-issue');?>" class="mim_remove_magazine button button-primary" style="display:none;"><br/>
+				<p><?php _e('Cover image size is dynamic or static? If static, change it to get dynamic value from plugin settings.','mim-issue')?><br/><?php _e('You must upload','mim-issue');?> <?php _e($width.'*'.$height ,'mim-issue');  _e(' size of image.','mim-issue');?></p>
+			</div> 
+			<?php $mim_nonce = wp_create_nonce( 'mim-category-nonce' ); ?>
+			<input type="hidden" name="category_wpnonce" value="<?php _e($mim_nonce,'mim-issue');?>">
+		<?php	
+		}
+		add_action( 'magazine_category_add_form_fields', 'mim_magazine_category_add_form_fields' );
+	 }	
+	 
+	 /**
+		* Edited custom field in magazine category taxonomy.
+		*
+		* Function Name: mim_magazine_category_edit_form_fields.
+		*
+		* 
+		*
+	**/
+	
+   if ( !function_exists( 'mim_magazine_category_edit_form_fields' ) )  {
+		function mim_magazine_category_edit_form_fields($tag) {
+			
+			wp_enqueue_media();
+			wp_enqueue_script( 'cat-upload-image', MIM_PLUGIN_URL . 'js/cat-media-upload.js' );	
+			wp_enqueue_style( 'issue-form-edit', MIM_PLUGIN_URL . 'css/issue-edit.css' );
+			$mim_term_id = $tag->term_id;
+            $mim_coverimage=get_metadata('taxonomy', $mim_term_id, 'mim_category_cover_image', true) ;	
+            $mim_coverimage_path=wp_get_attachment_image_src($mim_coverimage,'thumbnail'); 	
+			$mim_cover_style= empty($mim_coverimage) ? 'display:none' : '';
+			if(!empty($mim_coverimage))
+			{
+				$mim_image_path=$mim_coverimage_path[0];
+			} else {
+				$mim_image_path='';
+			}	
+            ?>
+			<tr class="form-field">
+				<?php $width=get_option('mim_cover_width');
+				$height=get_option('mim_cover_height'); ?>
+				<th valign="top" scope="row"><?php _e( 'Cover Image', 'mim-issue'  ); ?></th>
+				<td>
+					 <div id="mim_magazine_cover_img_show" class="cover_img_edit" style="<?php _e($mim_cover_style,'mim-issue');?>">
+						 <img src="<?php _e(esc_url($mim_image_path),'mim-issue');?>" name="mim_display_cover_image_magazine" id="mim_display_cover_image_magazine"/>
+					 </div>
+					 <input id="mim_upload_image_magazine" type="hidden" size="36" name="mim_upload_image_magazine" value="<?php _e($mim_coverimage,'mim-issue');?>" />
+					 <input id="mim_upload_image_button_magazine" type="button" value="<?php _e('Upload','mim-issue');?>" class="mim_image_magazine button button-primary"/>
+					 <input id="remove_magazine_image" type="button" value="<?php _e('Remove Image','mim-issue');?>" class="mim_remove_magazine button button-primary" style="<?php _e($mim_cover_style,'mim-issue');?>"><br/> 
+					 <span class="description"><?php _e('Cover image size is dynamic or static? If static, change it to get dynamic value from plugin settings.<br/>You must upload','mim-issue');?><?php _e($width.'*'.$height,'mim-issue');?> <?php _e('size of image.','mim-issue');?></span>
+				</td>
+			</tr>
+		<?php $mim_nonce = wp_create_nonce( 'mim-category-nonce' ); ?>
+			<input type="hidden" name="category_wpnonce" value="<?php _e($mim_nonce,'mim-issue');?>">			
+		<?php	
+		}
+		add_action( 'magazine_category_edit_form_fields','mim_magazine_category_edit_form_fields');
+	}
+	
+		/**
+		* Save custom field data for magazine category.
+		*
+		* Function Name: mim_save_magazine_category_custom_meta.
+		*
+		* 
+		*
+	**/
+	if ( !function_exists( 'mim_save_magazine_category_custom_meta' ) )  {
+		function mim_save_magazine_category_custom_meta( $term_id ) {	  	
+			$mim_nonces = $_REQUEST['category_wpnonce'];	
+			if(! wp_verify_nonce( $mim_nonces, 'mim-category-nonce' ))
+				return;		
+			if ( defined( 'DOING_AJAX' ) && DOING_AJAX ) {
+				$tax_name = $_POST['taxonomy'];
+				$tax_obj  = get_taxonomy($tax_name);
+			} else {
+				$tax_name = get_current_screen()->taxonomy;
+				$tax_obj  = get_taxonomy($tax_name);
+			}				
+			if ( !current_user_can( $tax_obj->cap->edit_terms ) )
+				return $term_id;	
+
+			$mim_upload_image_magazine=$_REQUEST['mim_upload_image_magazine'];
+
+			if ( $_REQUEST['taxonomy'] == 'magazine_category' ) {		
+				update_metadata('taxonomy', $term_id, 'mim_category_cover_image', $mim_upload_image_magazine); 	
+			}
+		}  	
+		add_action( 'edited_magazine_category', 'mim_save_magazine_category_custom_meta', 10, 2 );  
+		add_action( 'create_magazine_category', 'mim_save_magazine_category_custom_meta', 10, 2 );
+	}
+	
+	/**
 		* Added custom field in issue taxonomy.
 		*
 		* Function Name: mim_issues_taxonomy_add_form_fields.
@@ -368,6 +482,58 @@
 					$qv['magazine_category'] = $term->slug;
 				}
 			}	
+		}
+	}
+	
+	/**
+		*  Custom column added in Magazine Category.
+		*
+		* Function Name: mim_magazine_category_custom_columns.
+		*
+		* 
+		*
+	**/
+	if ( !function_exists( 'mim_magazine_category_custom_columns' ) )  {
+		add_filter("manage_edit-magazine_category_columns", 'mim_magazine_category_custom_columns');	 
+		function mim_magazine_category_custom_columns($theme_columns) {
+		    $new_columns = array(
+				'cb' => '<input type="checkbox" />',
+				'cover_image' =>__('Cover Image','mim-issue'),
+		        'name' => __('Name','mim-issue'), 
+		        'slug' => __('Slug','mim-issue'), 
+		        'posts' => __('No of Articles','mim-issue')
+		        );
+		    return $new_columns;
+		}
+	}
+	
+	/**
+		*  Custom column added in Magazine Category.
+		*
+		* Function Name: mim_magazine_category_manage_columns.
+		*
+		* 
+		*
+	**/
+	
+	if ( !function_exists( 'mim_magazine_category_manage_columns' ) )  {	
+		add_filter("manage_magazine_category_custom_column", 'mim_magazine_category_manage_columns', 10, 3);	 
+		function mim_magazine_category_manage_columns($out, $column_name, $mim_term_id) {   
+		    switch ($column_name) {
+		        case 'cover_image':
+		           	$mim_coverimage=get_metadata('taxonomy', $mim_term_id, 'mim_category_cover_image', true) ;
+					$mim_coverimage_path=wp_get_attachment_image_src($mim_coverimage,'thumbnail'); 
+					if(empty($mim_coverimage))
+						$imgurl=MIM_PLUGIN_URL . '/images/default.jpg';
+						
+					else
+						$imgurl=$mim_coverimage_path[0];
+					$out .='<img src="'.esc_url($imgurl).'" />';			
+		            break;
+		        default:
+		            break;
+		    }
+		    return $out;   
 		}
 	}
 

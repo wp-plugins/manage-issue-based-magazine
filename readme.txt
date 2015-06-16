@@ -3,7 +3,7 @@ Contributors: PurpleMAD
 Tags: Magazine Issue Manage, Magazine, Issue Manager, Issue, Issues, Magazine Issue, Manage Issue Based Magazine
 Requires at least: 3.8.1
 Tested up to: 4.2.2
-Stable tag: 1.6
+Stable tag: 1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -146,6 +146,9 @@ Plugin Developed by PurpleMAD [Visit website](http://www.purplemad.ca)
 
 = 1.6 =
 * Fixed Some Bugs in the plugin.
+
+= 1.7 =
+* Added Cover Image Option In Magazine category page in the plugin.
 
 == Upgrade Notice ==
 Click here for [Plugin Demo](http://mim.purplemadprojects.com/) 
