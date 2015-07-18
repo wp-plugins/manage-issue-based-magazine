@@ -12,13 +12,13 @@ Transform your website from a boring blog into a mesmerizing magazine in your la
 == Description ==
 
 
-> **Coming up: Issue Based Magazine Theme**
+> **Also available are our two themes built on this plugin.**
 >
-> And If you are looking for custom theme to publish issue based magazine, feel free to contact us for theme development at info@purplemad.ca.
+> 1. IssueMag Theme: This is a free theme, which you can download from WordPress https://wordpress.org/themes/download/manage-issue-based-magazine.1.0.1.zip?nostats=1
+> 
+> 2. IssueMag Pro: This is a paid theme, which you can download from our website http://issuemagazineplus.com/downloads/issuemag-pro-theme/
 >
-> [Click here](vimeo.com/issuemagazineplus) to learn more about how to setup issue based magazine using this plugin.
->
-> [Click here](mailto:info@purplemad.ca) to submit your website to display on our portfolio page.
+> Please visit www.IssueMagazinePlus.com for premium services for Issue Based Magazine plugin and themes.
  
 It is all about presentation. When you create awesome content, get more out of it by presenting it in a more professional format. 
 
