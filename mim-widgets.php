@@ -145,7 +145,7 @@ class MIM_Issue_Browse_Widget extends WP_Widget
  	function __construct() {
 		parent::__construct(
 			'MIM_Issue_Browse_Widget', // Base ID
-			__('MIM_Issue_Browse_Widget','mim-issue'), // Name
+			__('MIM Issue Browse Widget','mim-issue'), // Name
 			array('description' => __( 'Displays list of published issues. When clicked on issue link, user will be redirected to home page with content of selected issue.','mim-issue'))
 		   );
 	}

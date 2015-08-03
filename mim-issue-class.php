@@ -140,12 +140,17 @@ if ( ! class_exists( 'MIM_Issue' ) ) {
 				   
 				  $mim_issue_menu_category= !empty($_REQUEST['mim_issue_menu_category']) ;
 				  update_option('mim_issue_menu_category',$mim_issue_menu_category);
-				  
+				
+				  $mim_issue_display_category= !empty($_REQUEST['mim_issue_display_category']) ;
+				  update_option('mim_issue_display_category',$mim_issue_display_category);
+				 
 				  $page_for_magazines= !empty($_REQUEST['page_for_magazines']) ? $_REQUEST['page_for_magazines'] : 'Select';
 				  update_option('page_for_magazines',$page_for_magazines);
 				  
 				  $page_for_archives= !empty($_REQUEST['page_for_archives']) ? $_REQUEST['page_for_archives'] : 'Select';
 				  update_option('page_for_archives',$page_for_archives);
+				  
+				 
 				 		
 				 ?>
 				 <script>
@@ -210,6 +215,21 @@ if ( ! class_exists( 'MIM_Issue' ) ) {
 												echo wp_dropdown_pages( array( 'name' => 'page_for_archives', 'echo' => 0, 'show_option_none' => __( '&mdash; Select &mdash;' ), 'option_none_value' => '0','selected'=>$page_for_archives_selected));	?>								
 												</td>
 				                            </tr>
+				                           	
+				                           	<tr>
+				                                <th rowspan="1"> <?php _e( 'Display Issue Category', 'mim-issue' ); ?>
+				                                <?php _e( '<i><p style="font-weight: normal;">(Issue Category if checked displays list of Current Issue Categories. )</p></i>', 'mim-issue' ); ?>
+												</th>
+				                                <td>
+				                                <?php
+				                                  $mim_issue_display_category=get_option('mim_issue_display_category');
+				                                  $mim_issue_display_category_selected = !empty($mim_issue_display_category) ? $mim_issue_display_category : '0';
+				                                ?>
+				                                <input type="checkbox" id="mim_issue_display_category" name="mim_issue_display_category" <?php checked( $mim_issue_display_category_selected); ?>"/>Display Current Issue Categories<br/>
+				                                
+				                                </td>
+				                           </tr>
+				                         
 											<tr>
 				                                <th rowspan="1"> <?php _e( 'Display full article on category page', 'mim-issue' ); ?>
 													<?php _e( '<i><p style="font-weight: normal;">(If this option is set to \'Yes\', when single article is there in category and you want to display full article on category page)</p></i>', 'mim-issue' ); ?>

@@ -2,8 +2,8 @@
 Contributors: PurpleMAD
 Tags: Magazine Issue Manage, Magazine, Issue Manager, Issue, Issues, Magazine Issue, Manage Issue Based Magazine
 Requires at least: 3.8.1
-Tested up to: 4.2.2
-Stable tag: 1.7
+Tested up to: 4.2.3
+Stable tag: 1.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,7 @@ Transform your website from a boring blog into a mesmerizing magazine in your la
 
 > **Also available are our two themes built on this plugin.**
 >
-> 1. IssueMag Theme: This is a free theme, which you can download from WordPress https://wordpress.org/themes/download/manage-issue-based-magazine.1.0.1.zip?nostats=1
+> 1. IssueMag Theme: This is a free theme, which you can download from WordPress https://wordpress.org/themes/manage-issue-based-magazine/
 > 
 > 2. IssueMag Pro: This is a paid theme, which you can download from our website http://issuemagazineplus.com/downloads/issuemag-pro-theme/
 >
@@ -150,9 +150,12 @@ Plugin Developed by PurpleMAD [Visit website](http://www.purplemad.ca)
 = 1.7 =
 * Added Cover Image Option In Magazine category page in the plugin.
 
+= 1.8 =
+* Added Display Issue Category checkbox to display list of current issue categories, if checked.
+
 == Upgrade Notice ==
 Click here for [Plugin Demo](http://mim.purplemadprojects.com/) 
 
 For Manage Issue Based Magazine Plugin [Download User Guide](http://mim.purplemadprojects.com/User-Guide-for-Manage-Issue-Based-Magazine-Plugin.pdf) 
 
-Plugin Developed by PurpleMAD [Visit website](http://www.purplemad.ca)
+Plugin Developed [Visit website](http://www.purplemad.ca)

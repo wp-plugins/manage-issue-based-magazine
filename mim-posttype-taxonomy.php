@@ -336,6 +336,7 @@
 			if ( !current_user_can( $tax_obj->cap->edit_terms ) )
 				return $term_id;	
 			$mim_issue_menu_category=$_REQUEST['tax_input']['magazine_category'];	
+			$mim_issue_display_category=$_REQUEST['tax_input']['magazine_category'];
 			$mim_upload_image_issue=$_REQUEST['mim_upload_image_issue'];
 			$mim_issue_pdf_file=$_REQUEST['mim_upload_file_pdf'];
 			if(!empty($_REQUEST['mim_issue_publish_date'])) {
@@ -345,6 +346,7 @@
 			}
 			if (  $_REQUEST['taxonomy'] == 'issues' ) {		
 				update_metadata('taxonomy', $term_id, 'mim_issue_menu_category', $mim_issue_menu_category); 
+				update_metadata('taxonomy', $term_id, 'mim_issue_display_category', $mim_issue_display_category); 
 				update_metadata('taxonomy', $term_id, 'mim_issue_cover_image', $mim_upload_image_issue); 
 				update_metadata('taxonomy', $term_id, 'mim_issue_pdf_file', $mim_issue_pdf_file); 
 				update_metadata('taxonomy', $term_id, 'mim_issue_publish_date',$mim_issue_publish_date ); 	
@@ -586,14 +588,16 @@
 		 		case 'issue_menu':
 					$mim_cateroty=get_metadata('taxonomy', $mim_term_id, 'mim_issue_menu_category', true) ;
 					if(!empty($mim_cateroty)) {
+						$outs = '';
 						foreach($mim_cateroty as $mim_cat_name => $mim_cat_value ) {
 							
 							$cat_name=get_term_by( 'id', $mim_cat_value, 'magazine_category',ARRAY_A) ;
-							$outs .= $cat_name['name'].',';
+							if(!empty($cat_name))
+							 $outs .= $cat_name['name'].',';
 						}	
 					}
 					else{
-						$outs .= '  -----  ';
+						$outs = '  -----  ';
 					}
 					$out =rtrim($outs,',');
 					break;

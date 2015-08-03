@@ -3,7 +3,7 @@
 Plugin Name: Magazine Issue Manager
 Plugin URI: http://mim.purplemadprojects.com/
 Description: To manage issue based online publication content. Using this plugin site owner can publish cotent in issues using either WordPress categorized article features or in form of PDFs. Site owner can plan content in terms of periodic issues and users can browse content by selecting issues on website.
-Version: 1.6
+Version: 1.8
 Text Domain: mim-issue
 Author: PurpleMAD
 Author URI: http://www.purplemad.ca/
@@ -47,15 +47,69 @@ function mim_issue_plugin_load_function(){
 		require_once('mim-functions.php');
 	}
 	
+	$display_category = get_option('mim_issue_display_category');
+	if ( $display_category == 1 ) {
+
+		// Add a filter to the template include to determine if the page has our 
+		// template assigned and return it's path
+		add_filter(
+			'template_include', 
+			'view_project_template'
+		);
+	}	
+	
 	# Load the language files
 	
 	load_plugin_textdomain( 'mim-issue', false, plugin_basename( dirname( __FILE__ )  . '/languages/' ));
 	
 }
 
+if ( ! function_exists( 'call_custom_taxonomy_template' ) ) : 
+function call_custom_taxonomy_template( $template_path ){
+
+    //Get template name
+    $template = basename($template_path);
+   
+
+    if( 1 == preg_match('/^template-magazine-category-listing((-(\S*))?).php/',$template) )
+         return true;
+	elseif( 1 == preg_match('/^taxonomy-magazine_category((-(\S*))?).php/',$template) )
+         return true;	 
+
+    return false;
+}
+endif; // call_custom_taxonomy_template
+
+if ( ! function_exists( 'view_project_template' ) ) : 
+/**
+ * Checks if the template is assigned to the page
+ */
+ function view_project_template( $template ) {
+
+        global $post,$wp_query; 
+        //check if the query is for that specific taxonomy page otherwise it goes to particular template page. 
+        if( $wp_query->query_vars['taxonomy'] == 'issues' && !call_custom_taxonomy_template($template))
+         $filename = 'template-magazine-category-listing.php';
+        elseif( $wp_query->query_vars['taxonomy'] == 'magazine_category' && !call_custom_taxonomy_template($template))
+         $filename = 'taxonomy-magazine_category.php';		 
+        
+        if( !empty($filename) ){
+          $file = plugin_dir_path(__FILE__). $filename;
+          
+	      // Just to be safe, we check if the file exist first
+	      if( file_exists( $file ) ) {
+			   return $file;
+	      } 
+        }
+        return $template;
+
+} 
+endif; // view_project_template
+
 register_activation_hook( __FILE__, 'min_activate' );	
 register_deactivation_hook( __FILE__,'min_deactivate' );
 register_uninstall_hook( __FILE__, 'mim_uninstall'  );
+
 
 /**
 *  Activate Plugin : When activate plugin then tabel created and default value added in database.
@@ -101,8 +155,10 @@ function min_activate(){
 		add_option('mim_search_behaviour','Yes','', 'yes');		
 		add_option('mim_current_issue','-1','', 'yes');	
 		add_option('mim_issue_menu_category');	
+		add_option('mim_issue_display_category');	
 		add_option('page_for_magazines','-1','', 'Select');	
 		add_option('page_for_archives','-1','', 'Select');		
+		add_option('page_for_issue_category','-1','', 'Select');		
 		
 		require_once( 'mim-custom-class.php' );
 		$mim_custom=new MIM_Custom();
@@ -150,8 +206,10 @@ function min_deactivate(){
 	delete_option('mim_search_behaviour');
 	delete_option('mim_current_issue');
 	delete_option('mim_issue_menu_category');
+	delete_option('mim_issue_display_category');
 	delete_option('page_for_magazines');
 	delete_option('page_for_archives');
+	delete_option('page_for_issue_category');
 	delete_option('users_can_register');
 	
     //unset session for current issue if plugin is deactive
@@ -182,8 +240,10 @@ function mim_uninstall(){
 	delete_option('mim_issue_menu_type');
 	delete_option('mim_current_issue');
 	delete_option('mim_issue_menu_category');
+	delete_option('mim_issue_display_category');
 	delete_option('page_for_magazines');
 	delete_option('page_for_archives');
+	delete_option('page_for_issue_category');
 	delete_option('users_can_register');
 	
     //unset session for current issue if plugin is uninstall

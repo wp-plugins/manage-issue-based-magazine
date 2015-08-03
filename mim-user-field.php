@@ -95,8 +95,13 @@ add_filter( 'manage_users_custom_column',  'mim_status_column', 10, 3 );
 **/
 
 function mim_add_column( $columns ) {
+	    
+	    $display_columns['display_name'] = __('Display Name', 'mim-issue');
         $the_columns['mim_user_status'] = __( 'Status', 'mim-issue' );
-
+        $the_columns['articles'] = __('No Of Articles', 'mim-issue');
+        
+        $columns = array_slice( $columns, 0, 3, true ) + $display_columns + array_slice( $columns, 3, NULL, true );
+        
         $newcol = array_slice( $columns, 0, -1 );
         $newcol = array_merge( $newcol, $the_columns );
         $columns = array_merge( $newcol, array_slice( $columns, 1 ) );
@@ -113,10 +118,17 @@ function mim_add_column( $columns ) {
 *
 **/
 function mim_status_column( $val, $column_name, $user_id ) {
+	
     switch ( $column_name ) {
         case 'mim_user_status' :
             return get_the_author_meta('mim_user_status', $user_id);
             break;
+        case 'articles' :
+		    $count= count_user_posts( $user_id , 'magazine' );
+		    return '<a class="edit" href="edit.php?post_type=magazine&author='.$user_id.'">'.$count.'</a>';
+		    break;
+        case 'display_name' :
+		    return get_the_author_meta( 'display_name', $user_id );  
 
         default:
     }

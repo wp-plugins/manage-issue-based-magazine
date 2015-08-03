@@ -3,7 +3,6 @@ jQuery(document).ready(function() {
 		 // Issue Image Prepare the variable that holds our custom media manager.
 		 var loc_file;
 		 var locationlabel = 0;
-	 
 		 // Bind to our click event in order to open up the new media experience.
 		 jQuery(document.body).on('click.mojoOpenMediaManager', '.mim_image_issue', function(e){ //mojo-open-media is the class of our form button
 			 // Prevent the default action from occuring.
@@ -75,11 +74,10 @@ jQuery(document).ready(function() {
 			jQuery('input:checkbox').removeAttr('checked');
         }
     });	
-	
-	jQuery( "#sortable" ).sortable();
+    
+    jQuery( "#sortable" ).sortable();
 	jQuery( "#sortable" ).disableSelection();
-	
-	
+
 	 // Issue Prepare the variable that holds our custom media manager.
 	 var issue_file;
 	 var coupleslabel = 0;

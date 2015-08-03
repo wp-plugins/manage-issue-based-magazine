@@ -12,6 +12,8 @@ if ( !function_exists( 'mim_issue_content_filter' ) ) {
 		
 		$page_for_magazines_id=get_option('page_for_magazines');
 		$page_for_archives_id=get_option('page_for_archives');
+	
+		
 		if ( ( $post->ID == $page_for_magazines_id ) && empty( $content ) ) {
 			include('includes/magazine-listing-template.php');
 		} else if( ( $post->ID == $page_for_archives_id ) && empty( $content ) ) {			

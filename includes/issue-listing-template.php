@@ -1,4 +1,6 @@
 <?php
+$mim_current_issue_id=get_option('mim_current_issue');
+
 	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1; 
 	$taxonomy = 'issues';
 	$per_page = get_option('posts_per_page');
@@ -38,13 +40,15 @@
 			}
 			$full_descr=$term->description;
 			$descr = substr( $full_descr,0,100); 
-			$descr_count=strlen($full_descr); ?>
+			$descr_count=strlen($full_descr); 			
+			$issue_link = get_term_link( $term );			
+			?>
 			<div class="magazine-align-relative">
 				<div class="magazine-columns">
 					<div class="mim-image-list" style="background-image: url(<?php echo $imgurl; ?>);background-repeat: no-repeat; background-size: 150px 150px;"></div>
 					<div class="magazine-subfont">
 						<h5>
-							<a href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?></a>	
+							<a href="<?php echo $issue_link; ?>"><?php echo $term->name; ?></a>	
 						</h5>
 						<?php _e('Posted On '. $mim_issue_publish_date); ?>
 						<br/>
